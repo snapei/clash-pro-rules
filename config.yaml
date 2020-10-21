@@ -130,41 +130,41 @@ proxies:
 # VMess
 - name: "HK-1"
   type: vmess
-  server: eode.net
+  server: server
   port: 443
-  uuid: ab38b9aa-3c8f-4b58-b4d5-734d991f2d00
+  uuid: uuid
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-path: /
-  Host: eode.net
+  Host: server
 
 # VMess
 - name: "HK-2"
   type: vmess
-  server: hk2.eode.net
+  server: server
   port: 443
-  uuid: 1e83261e-93b9-42f0-862d-c79fec91e05f
+  uuid: uuid
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-path: /
-  Host: hk2.eode.net
+  Host: server
 
 # VMess
 - name: "HK-3"
   type: vmess
-  server: oijs.net
+  server: server
   port: 443
-  uuid: 4470e3cc-1b1b-46f4-b269-b32c654e29e8
+  uuid: uuid
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-path: /
-  Host: oijs.net
+  Host: server
 
 
 
