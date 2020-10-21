@@ -21,42 +21,31 @@
 
 ### 在线地址（URL）
 
-> 如果无法访问域名 `raw.githubusercontent.com`，可以使用第二个地址（`cdn.jsdelivr.net`），但是内容更新会有 12 小时的延迟。以下地址填写在 Clash 配置文件里的 `rule-providers` 里的 `url` 配置项中。
+> 如果无法访问域名 `raw.githubusercontent.com`，请把本地的DNS设置成谷歌dns8.8.8.8（软路由DNS同理）。以下地址填写在 Clash 配置文件里的 `rule-providers` 里的 `url` 配置项中。
 
 - **直连域名列表 direct.txt**：
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/direct.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/direct.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt)
 - **代理域名列表 proxy.txt**：
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/proxy.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/proxy.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt)
 - **广告域名列表 reject.txt**：
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/reject.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/reject.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt)
 - **Apple 域名列表 apple.txt**：
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/apple.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/apple.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt)
 - **iCloud 域名列表 icloud.txt**：
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/icloud.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/icloud.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt)
 - **Google 域名列表 google.txt**：
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/google.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/google.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt)
 - **局域网 IP 及保留 IP 地址列表 lancidr.txt**：
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/lancidr.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/lancidr.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt)
 - **中国大陆 IPv4 地址列表 cncidr.txt**：
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/cncidr.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/cncidr.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt)
 - **YOUTUBE 域名列表 youtube.txt**：  
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/youtube.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/youtube.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/youtube.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/youtube.txt)
 - **NETFLIX 域名列表 netflix.txt**：  
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflix.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflix.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/netflix.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/netflix.txt)
 - **NETFLIX IPv4 地址列表 netflixcidr.txt**：  
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflixcidr.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflixcidr.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/netflixcidr.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/netflixcidr.txt)
-
+ 
 ### 使用方式
 
 关于 Clash Premium 使用方式，请查看[官方文档](https://github.com/Dreamacro/clash/wiki/premium-core-features) 或 [Lancellc's GitBook](https://lancellc.gitbook.io/clash/)。
@@ -172,14 +161,18 @@ rules:
   - PROCESS-NAME,NetTransport,DIRECT
   - PROCESS-NAME,uTorrent,DIRECT
   - PROCESS-NAME,WebTorrent,DIRECT
+  - RULE-SET,lancidr,DIRECT,no-resolve
+  - RULE-SET,cncidr,DIRECT,no-resolve
   - RULE-SET,reject,REJECT
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
-  - RULE-SET,google,DIRECT
+  - RULE-SET,google,GOOGLE
+  - RULE-SET,youtube,YOUTUBE
+  - RULE-SET,netflix,NETFLIX
+  - RULE-SET,netflixcidr,NETFLIX,no-resolve
   - RULE-SET,proxy,PROXY
   - RULE-SET,direct,DIRECT
-  - RULE-SET,lancidr,DIRECT,no-resolve
-  - RULE-SET,cncidr,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT
   - MATCH,PROXY
 ```
 
