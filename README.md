@@ -22,7 +22,7 @@
 ### 在线地址（URL）
 
 > 如果无法访问域名 `raw.githubusercontent.com`，
-> 方法一：请把本地的DNS设置成谷歌dns8.8.8.8（软路由DNS同理）；如果谷歌DNS不能用请选择日本DNS36.2.8.242或者香港DNS。
+> 方法一：请把本地的DNS设置成谷歌dns8.8.8.8或者电信dns114.114.114.114（软路由DNS同理）；如果谷歌电信DNS不能用请选择日本DNS36.2.8.242或者香港DNS。
 - 日本DNS：http://ip.yqie.com/dns_japanese.htm
 - 香港DNS：http://ip.yqie.com/dns_hongkong.htm
 
