@@ -178,6 +178,7 @@ rules:
 
 ## 致谢
 
+- [@Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)
 - [@Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat)
 - [@v2fly/domain-list-community](https://github.com/v2fly/domain-list-community)
 - [@felixonmars/dnsmasq-china-list](https://github.com/felixonmars/dnsmasq-china-list)
