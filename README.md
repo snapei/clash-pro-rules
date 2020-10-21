@@ -21,9 +21,13 @@
 
 ### 在线地址（URL）
 
-> 如果无法访问域名 `raw.githubusercontent.com`，请把本地的DNS设置成谷歌dns8.8.8.8（软路由DNS同理）；如果谷歌DNS不能用请选择日本DNS36.2.8.242或者香港DNS。
+> 如果无法访问域名 `raw.githubusercontent.com`，
+> 方法一：请把本地的DNS设置成谷歌dns8.8.8.8（软路由DNS同理）；如果谷歌DNS不能用请选择日本DNS36.2.8.242或者香港DNS。
 > 日本DNS：http://ip.yqie.com/dns_japanese.htm
 > 香港DNS：http://ip.yqie.com/dns_hongkong.htm
+
+> 方法二，修改系统hosts文件，添加151.101.108.133 raw.githubusercontent.com
+
 > 以下地址填写在 Clash 配置文件里的 `rule-providers` 里的 `url` 配置项中。
 
 - **直连域名列表 direct.txt**：
