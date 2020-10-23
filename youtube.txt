@@ -1,6 +1,7 @@
 payload:
   # youtube
   - '+.googlevideo.com'
+  - '+.youtubei.googleapis.com'
   - '+.youtube.com'
   - '+.youtu.be'
   - '+.youtube-nocookie.com'
