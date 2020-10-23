@@ -2,6 +2,7 @@ payload:
   # youtube
   - '+.googlevideo.com'
   - '+.youtubei.googleapis.com'
+  - '+.oauthaccountmanager.googleapis.com'
   - '+.youtube.com'
   - '+.youtu.be'
   - '+.youtube-nocookie.com'
