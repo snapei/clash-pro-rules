@@ -58,7 +58,6 @@ payload:
   - '+.tools.l.google.com'
   - '+.translate.googleapis.com'
   - '+.update.googleapis.com'
-  - '+.youtubei.googleapis.com'
   - '+.www-googletagmanager.l.google.com'
   - '+.www.gstatic.com'
   - '+.apis.google.com'
