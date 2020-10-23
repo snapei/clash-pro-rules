@@ -1,0 +1,311 @@
+#规则模板请访问：https://lancellc.gitbook.io/clash/
+#
+# Port of HTTP(S) proxy server on the local end
+port: 7890
+
+# Port of SOCKS5 proxy server on the local end
+socks-port: 7891
+
+# Transparent proxy server port for Linux and macOS
+redir-port: 7892
+
+# HTTP(S) and SOCKS5 server on the same port
+# mixed-port: 7890
+
+# authentication of local SOCKS5/HTTP(S) server
+# authentication:
+#  - "user1:pass1"
+#  - "user2:pass2"
+
+# Set to true to allow connections to the local-end server from
+# other LAN IP addresses
+allow-lan: false
+
+# This is only applicable when `allow-lan` is `true`
+# '*': bind all IP addresses
+# 192.168.122.11: bind a single IPv4 address
+# "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
+# bind-address: '*'
+
+# Clash router working mode
+# rule: rule-based packet routing
+# global: all packets will be forwarded to a single endpoint
+# direct: directly forward the packets to the Internet
+mode: rule
+
+# Clash by default prints logs to STDOUT
+# info / warning / error / debug / silent
+log-level: info
+
+# When set to false, resolver won't translate hostnames to IPv6 addresses
+ipv6: false
+
+# RESTful web API listening address
+external-controller: 127.0.0.1:9090
+
+# A relative path to the configuration directory or an absolute path to a
+# directory in which you put some static web resource. Clash core will then
+# serve it at `http://{{external-controller}}/ui`.
+# external-ui: folder
+
+# Secret for the RESTful API (optional)
+# Authenticate by spedifying HTTP header `Authorization: Bearer ${secret}`
+# ALWAYS set a secret if RESTful API is listening on 0.0.0.0
+# secret: ""
+
+# Outbound interface name
+# interface-name: en0
+
+# Static hosts for DNS server and connection establishment, only works
+# when `dns.enhanced-mode` is `redir-host`.
+#
+# Wildcard hostnames are supported (e.g. *.clash.dev, *.foo.*.example.com)
+# Non-wildcard domain names have a higher priority than wildcard domain names
+# e.g. foo.example.com > *.example.com > .example.com
+# P.S. +.foo.com equals to .foo.com and foo.com
+hosts:
+  # '*.clash.dev': 127.0.0.1
+  # '.dev': 127.0.0.1
+  # 'alpha.clash.dev': '::1'
+
+# DNS server settings
+# This section is optional. When not present, the DNS server will be disabled.
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  # ipv6: false # when the false, response to AAAA questions will be empty
+
+  # These nameservers are used to resolve the DNS nameserver hostnames below.
+  # Specify IP addresses only
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 8.8.8.8
+  enhanced-mode: redir-host # or fake-ip
+  fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
+  # use-hosts: true # lookup hosts and return IP record
+  
+  # Hostnames in this list will not be resolved with fake IPs
+  # i.e. questions to these domain names will always be answered with their
+  # real IP addresses
+  # fake-ip-filter:
+  #   - '*.lan'
+  #   - localhost.ptlogin2.qq.com
+  
+  # Supports UDP, TCP, DoT, DoH. You can specify the port to connect to.
+  # All DNS questions are sent directly to the nameserver, without proxies
+  # involved. Clash answers the DNS question with the first result gathered.
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114 # default value
+    - 8.8.8.8 # default value
+    - tls://dns.rubyfish.cn:853 # DNS over TLS
+    - https://1.1.1.1/dns-query # DNS over HTTPS
+
+  # When `fallback` is present, the DNS server will send concurrent requests
+  # to the servers in this section along with servers in `nameservers`.
+  # The answers from fallback servers are used when the GEOIP country
+  # is not `CN`.
+  # fallback:
+  #   - tcp://1.1.1.1
+
+  # If IP addresses resolved with servers in `nameservers` are in the specified
+  # subnets below, they are considered invalid and results from `fallback`
+  # servers are used instead.
+  #
+  # IP address resolved with servers in `nameserver` is used when
+  # `fallback-filter.geoip` is true and when GEOIP of the IP address is `CN`.
+  #
+  # If `fallback-filter.geoip` is false, results from `nameserver` nameservers
+  # are always used if not match `fallback-filter.ipcidr`.
+  #
+  # This is a countermeasure against DNS pollution attacks.
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      # - 240.0.0.0/4
+
+proxies:
+
+# VMess
+- name: "HK-1"
+  type: vmess
+  server: server
+  port: 443
+  uuid: uuid
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-path: /
+  Host: server
+
+# VMess
+- name: "HK-2"
+  type: vmess
+  server: server
+  port: 443
+  uuid: uuid
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-path: /
+  Host: server
+
+# VMess
+- name: "HK-3"
+  type: vmess
+  server: server
+  port: 443
+  uuid: uuid
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-path: /
+  Host: server
+
+
+
+proxy-groups:
+
+# url-test 通过指定的 URL 测试并选择延迟最低的节点
+- name: "自动选择节点"
+  type: url-test
+  proxies:
+    - "HK-1"
+    - "HK-2"
+    - "HK-3"
+
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+
+# 手动节点选择
+- name: "PROXY"
+  type: select
+  proxies:
+    - "自动选择节点"
+    - "HK-1"
+    - "HK-2"
+    - "HK-3"
+
+# GOOGLE
+- name: "GOOGLE"
+  type: select
+  proxies:
+    - "自动选择节点"
+    - "HK-1"
+    - "HK-2"
+    - "HK-3"
+
+# YOUTUBE
+- name: "YOUTUBE"
+  type: select
+  proxies:
+    - "自动选择节点"
+    - "HK-1"
+    - "HK-2"
+    - "HK-3"
+
+# NETFLIX
+- name: "NETFLIX"
+  type: select
+  proxies:
+    - "自动选择节点"
+    - "HK-1"
+    - "HK-2"
+    - "HK-3"
+
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  netflix:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflix.txt"
+    path: ./ruleset/netflix.yaml
+    interval: 86400
+
+  netflixcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflixcidr.txt"
+    path: ./ruleset/netflixcidr.yaml
+    interval: 86400
+
+  youtube:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/youtube.txt"
+    path: ./ruleset/youtube.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,lancidr,DIRECT,no-resolve
+  - RULE-SET,cncidr,DIRECT,no-resolve
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,GOOGLE
+  - RULE-SET,youtube,YOUTUBE
+  - RULE-SET,netflix,NETFLIX
+  - RULE-SET,netflixcidr,NETFLIX,no-resolve
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,direct,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
