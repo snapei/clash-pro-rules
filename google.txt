@@ -8,6 +8,7 @@ payload:
   - '+.beacons3.gvt2.com'
   - '+.c.admob.com'
   - '+.c.android.clients.google.com'
+  - '+.android.clients.google.com'
   - '+.cache.pack.google.com'
   - '+.checkin.gstatic.com'
   - '+.clickserve.dartsearch.net'
