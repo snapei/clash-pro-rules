@@ -50,7 +50,7 @@
 - **YOUTUBE 域名列表 youtube.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt)
 - **NETFLIX 域名列表 netflix.txt**：  
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflix.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt)
 - **NETFLIX IPv4 地址列表 netflixcidr.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt)
 - **GFWList 域名列表 gfw.txt**：
