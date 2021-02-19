@@ -58,7 +58,7 @@
 - **GreatFire 域名列表 greatfire.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/greatfire.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/greatfire.txt)
 - **非中国大陆使用的顶级域名列表 tld-not-cn.txt**：  
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/tld-not-cn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt)
 - **Telegram 使用的 IP 地址列表 telegramcidr.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt)
  
