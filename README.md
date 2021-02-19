@@ -53,6 +53,14 @@
   - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflix.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt)
 - **NETFLIX IPv4 地址列表 netflixcidr.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt)
+- **GFWList 域名列表 gfw.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/gfw.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/gfw.txt)
+- **GreatFire 域名列表 greatfire.txt**：  
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/greatfire.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/greatfire.txt)
+- **非中国大陆使用的顶级域名列表 tld-not-cn.txt**：  
+  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/tld-not-cn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt)
+- **Telegram 使用的 IP 地址列表 telegramcidr.txt**：  
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt)
  
 ### 使用方式
 
@@ -140,6 +148,36 @@ rule-providers:
     url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt"
     path: ./ruleset/netflixcidr.yaml
     interval: 86400
+
+gfw:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+
 
 ```
 
