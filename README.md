@@ -32,27 +32,27 @@
 > 以下地址填写在 Clash 配置文件里的 `rule-providers` 里的 `url` 配置项中。
 
 - **直连域名列表 direct.txt**：
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/direct.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/direct.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/direct.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/direct.txt)
 - **代理域名列表 proxy.txt**：
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/proxy.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/proxy.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt)
 - **广告域名列表 reject.txt**：
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/reject.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/reject.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt)
 - **Apple 域名列表 apple.txt**：
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/apple.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/apple.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt)
 - **iCloud 域名列表 icloud.txt**：
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/icloud.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/icloud.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/icloud.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/icloud.txt)
 - **Google 域名列表 google.txt**：
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/google.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/google.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt)
 - **局域网 IP 及保留 IP 地址列表 lancidr.txt**：
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/lancidr.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/lancidr.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/lancidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/lancidr.txt)
 - **中国大陆 IPv4 地址列表 cncidr.txt**：
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/cncidr.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/cncidr.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/cncidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/cncidr.txt)
 - **YOUTUBE 域名列表 youtube.txt**：  
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/youtube.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/youtube.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt)
 - **NETFLIX 域名列表 netflix.txt**：  
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflix.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflix.txt)
+  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflix.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt)
 - **NETFLIX IPv4 地址列表 netflixcidr.txt**：  
-  - [https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflixcidr.txt](https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflixcidr.txt)
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt)
  
 ### 使用方式
 
@@ -67,77 +67,77 @@ rule-providers:
   reject:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/reject.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt"
     path: ./ruleset/reject.yaml
     interval: 86400
 
   icloud:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/icloud.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/icloud.txt"
     path: ./ruleset/icloud.yaml
     interval: 86400
 
   apple:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/apple.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt"
     path: ./ruleset/apple.yaml
     interval: 86400
 
   google:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/google.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt"
     path: ./ruleset/google.yaml
     interval: 86400
 
   proxy:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/proxy.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt"
     path: ./ruleset/proxy.yaml
     interval: 86400
 
   direct:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/direct.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/direct.txt"
     path: ./ruleset/direct.yaml
     interval: 86400
 
   cncidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/cncidr.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/cncidr.txt"
     path: ./ruleset/cncidr.yaml
     interval: 86400
 
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/lancidr.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
     interval: 86400
 
   youtube:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/youtube.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt"
     path: ./ruleset/youtube.yaml
     interval: 86400
     
   netflix:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflix.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt"
     path: ./ruleset/netflix.yaml
     interval: 86400
     
   netflixcidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/oijs/clash-pro-rules/release/netflixcidr.txt"
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt"
     path: ./ruleset/netflixcidr.yaml
     interval: 86400
 
