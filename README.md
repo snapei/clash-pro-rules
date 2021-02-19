@@ -149,7 +149,7 @@ rule-providers:
     path: ./ruleset/netflixcidr.yaml
     interval: 86400
 
-gfw:
+  gfw:
     type: http
     behavior: domain
     url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/gfw.txt"
@@ -216,6 +216,10 @@ rules:
   - RULE-SET,youtube,YOUTUBE
   - RULE-SET,netflix,NETFLIX
   - RULE-SET,netflixcidr,NETFLIX,no-resolve
+  - RULE-SET,gfw,PROXY
+  - RULE-SET,greatfire,PROXY
+  - RULE-SET,tld-not-cn,PROXY
+  - RULE-SET,telegramcidr,PROXY,no-resolve
   - RULE-SET,proxy,PROXY
   - RULE-SET,direct,DIRECT
   - GEOIP,CN,DIRECT
