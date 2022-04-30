@@ -61,6 +61,8 @@
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt)
 - **Telegram 使用的 IP 地址列表 telegramcidr.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt)
+- **TIKTOK 域名列表 tiktok.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tiktok.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tiktok.txt)  
  
 ### 使用方式
 
@@ -177,6 +179,13 @@ rule-providers:
     path: ./ruleset/telegramcidr.yaml
     interval: 86400
 
+  tiktok:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tiktok.txt"
+    path: ./ruleset/tiktok.yaml
+    interval: 86400
+
 
 
 ```
@@ -220,6 +229,7 @@ rules:
   - RULE-SET,greatfire,PROXY
   - RULE-SET,tld-not-cn,PROXY
   - RULE-SET,telegramcidr,PROXY,no-resolve
+  - RULE-SET,tiktok,PROXY
   - RULE-SET,proxy,PROXY
   - RULE-SET,direct,DIRECT
   - GEOIP,CN,DIRECT
