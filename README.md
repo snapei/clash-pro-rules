@@ -26,8 +26,8 @@
 - 日本DNS：http://ip.yqie.com/dns_japanese.htm
 - 国内DNS大全：https://dns.ip.cn/
 
-> 方法二，修改系统hosts文件，添加151.101.108.133 raw.githubusercontent.com
-- 查询解析的IP地址：https://site.ip138.com/raw.githubusercontent.com/
+> 方法二，修改系统hosts文件，添加151.101.108.133 raw.githubusercontent.com (备注，这是我的IP查询出来的，请自行按照自己网络查询)
+- 查询解析的IP地址：https://ipaddress.com/website/raw.githubusercontent.com
 
 > 以下地址填写在 Clash 配置文件里的 `rule-providers` 里的 `url` 配置项中。
 
