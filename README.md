@@ -21,48 +21,62 @@
 
 ### 在线地址（URL）
 
-> 如果无法访问域名 `raw.githubusercontent.com`，
-> 方法一：请把本地的DNS设置成电信dns114.114.114.114联通dns123.125.81.6（软路由DNS同理）；如果谷歌电信DNS不能用请选择日本DNS36.2.8.242。
-- 日本DNS：http://ip.yqie.com/dns_japanese.htm
-- 国内DNS大全：https://dns.ip.cn/
+### 无法访问 `raw.githubusercontent.com`的解决方法
 
-> 方法二，修改系统hosts文件，添加151.101.108.133 raw.githubusercontent.com (备注，这是我的IP查询出来的，请自行按照自己网络查询)
-- 查询解析的IP地址：https://ipaddress.com/website/raw.githubusercontent.com
+- 方法一，修改系统hosts文件，添加151.101.108.133 raw.githubusercontent.com (备注，这是我的IP查询出来的，请自行按照自己网络查询) \
+  查询解析的IP地址：`https://ipaddress.com/website/raw.githubusercontent.com`  
+- 方法二，如果`raw.githubusercontent.com`无法链接，请使用备选链接`cdn.jsdelivr.net` 
 
 > 以下地址填写在 Clash 配置文件里的 `rule-providers` 里的 `url` 配置项中。
 
 - **直连域名列表 direct.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/direct.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/direct.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/direct.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/direct.txt)
 - **代理域名列表 proxy.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/proxy.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/proxy.txt)
 - **广告域名列表 reject.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/reject.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/reject.txt)
 - **Apple 域名列表 apple.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/apple.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/apple.txt)
 - **iCloud 域名列表 icloud.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/icloud.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/icloud.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/icloud.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/icloud.txt)
 - **Google 域名列表 google.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt)
 - **局域网 IP 及保留 IP 地址列表 lancidr.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/lancidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/lancidr.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/lancidr.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/lancidr.txt)
 - **中国大陆 IPv4 地址列表 cncidr.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/cncidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/cncidr.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/cncidr.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/cncidr.txt)
 - **YOUTUBE 域名列表 youtube.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/youtube.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/youtube.txt)
 - **NETFLIX 域名列表 netflix.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflix.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflix.txt)
 - **NETFLIX IPv4 地址列表 netflixcidr.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflixcidr.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflixcidr.txt)
 - **GFWList 域名列表 gfw.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/gfw.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/gfw.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/gfw.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/gfw.txt)
 - **GreatFire 域名列表 greatfire.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/greatfire.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/greatfire.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/greatfire.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/greatfire.txt)
 - **非中国大陆使用的顶级域名列表 tld-not-cn.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/tld-not-cn.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/tld-not-cn.txt)
 - **Telegram 使用的 IP 地址列表 telegramcidr.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/telegramcidr.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/telegramcidr.txt)
 - **TIKTOK 域名列表 tiktok.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tiktok.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tiktok.txt)  
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tiktok.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tiktok.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/tiktok.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/tiktok.txt)  
  
 ### 使用方式
 
