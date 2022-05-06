@@ -27,6 +27,14 @@
   查询解析的IP地址：`https://ipaddress.com/website/raw.githubusercontent.com`  
 - 方法二，如果`raw.githubusercontent.com`无法链接，请使用备选链接`cdn.jsdelivr.net` 
 
+### cdn.jsdelivr.net 无法刷新缓存解决方法
+- 将 cdn.jsdelivr.net中的cdn改为 purge
+- git bash中执行 \
+ `curl https://purge.jsdelivr.net/gh/username/reponame@latest/file.*** `
+- 浏览器直接访问 \
+` https://purge.jsdelivr.net/gh/snapei/clash-pro-rules@release/xxx.txt `
+
+
 > 以下地址填写在 Clash 配置文件里的 `rule-providers` 里的 `url` 配置项中。
 
 - **直连域名列表 direct.txt**：
