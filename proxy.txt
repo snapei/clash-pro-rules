@@ -14129,7 +14129,6 @@ payload:
   - '+.muncloud.dog'
   - '+.muramura.tv'
   - '+.murmurcn.com'
-  - '+.muscdn.com'
   - '+.musemagazine.it'
   - '+.mushymush.tv'
   - '+.musicade.net'
