@@ -15254,7 +15254,6 @@ payload:
   - '+.ooyala.com'
   - '+.op.gg'
   - '+.open'
-  - '+.openai.com'
   - '+.openaked.com'
   - '+.openallweb.com'
   - '+.openamt.com'
