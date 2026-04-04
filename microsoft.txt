@@ -1,0 +1,42 @@
+# Microsoft Global Comprehensive List
+payload:
+  # === 核心系统与账户 (Windows, Microsoft Account) ===
+  - '+.microsoft.com'
+  - '+.windows.com'
+  - '+.live.com'
+  - '+.microsoftonline.com'
+  - '+.microsoft-cloud.com'
+  - '+.msn.com'
+  - '+.msauth.net'      # 关键：账户登录验证
+  - '+.msftncsi.com'    # 关键：Windows 网络连接状态检测
+
+  # === 办公与生产力 (Office, Outlook, OneDrive) ===
+  - '+.office.com'
+  - '+.office365.com'
+  - '+.outlook.com'
+  - '+.onedrive.com'
+  - '+.1drv.com'
+  - '+.skype.com'
+  - '+.sharepoint.com'
+
+  # === 开发与云服务 (Azure, Visual Studio) ===
+  - '+.azure.com'
+  - '+.azureedge.net'
+  - '+.azurewebsites.net'
+  - '+.visualstudio.com'
+  - '+.vscode.dev'
+  - '+.aspnetcdn.com'
+
+  # === 搜索与资讯 (Bing) ===
+  - '+.bing.com'
+  - '+.bing.net'
+  - '+.bing.visualsearch.com'
+
+  # === 社交与职场 (LinkedIn) ===
+  - '+.linkedin.com'
+  - '+.licdn.com'       # LinkedIn 静态资源
+
+  # === 游戏娱乐 (Xbox) ===
+  - '+.xbox.com'
+  - '+.xboxlive.com'
+  - '+.playfabapi.com'  # Xbox 游戏后台 API

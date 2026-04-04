@@ -1,0 +1,15 @@
+# GitHub Global Comprehensive List
+payload:
+  # === 核心主站 ===
+  - '+.github.com'
+  - '+.github.io'        # GitHub Pages
+  - '+.github.dev'       # 网页版 VS Code 编辑器
+  
+  # === 静态资源与文件分发 (流量大头) ===
+  - '+.githubusercontent.com' # **极重要**：Raw 代码、头像、附件
+  - '+.githubassets.com'      # 网站 UI 资源
+  
+  # === 其它官方关联 ===
+  - '+.githubapp.com'
+  - '+.git.io'                # 官方短链
+  - '+.ghcr.io'               # GitHub 容器镜像仓库
