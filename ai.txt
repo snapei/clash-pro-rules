@@ -18,11 +18,6 @@ payload:
   - '+.proactive.google.com'
   - 'copilot.microsoft.com'
   - 'sydney.bing.com' # Copilot 核心后端
-  
-# xAI & Grok (Elon Musk's AI)
-  - '+.x.ai'          # xAI 官方域名
-  - '+.grok.com'      # Grok 对话主站（极重要）
-  - '+.xai.com'       # 备用与公司官网
 
 # AI Search & Productivity
   - '+.perplexity.ai'    # AI 搜索
@@ -40,3 +35,77 @@ payload:
   - '+.runwayml.com'     # AI 视频生成
   - '+.pika.art'         # AI 视频生成
   - '+.leonardo.ai'      # AI 绘图
+
+# Manus AI - The General Purpose AI Agent
+  # === 核心官网与应用 ===
+  - '+.manus.ai'          # 主站与 Web App
+  - '+.manus.com'         # 备用/保护域名
+  
+  # === 身份验证 (极重要：Manus 使用 Clerk 服务) ===
+  - '+.clerk.com'         # Clerk 认证服务
+  - '+.clerk.accounts.dev' # Clerk 动态账号分配域名
+  
+  # === 基础设施与监控 (防止前端加载报错) ===
+  - '+.sentry.io'         # 错误日志监控 (AI 工具常用，不通可能报错)
+  - '+.posthog.com'       # 用户行为分析
+  - '+.intercom.io'       # 在线客服与引导
+  - '+.statsig.com'       # 功能开关与灰度发布
+
+# Perplexity AI - AI Search Engine
+  # === 核心官网与应用 ===
+  - '+.perplexity.ai'
+  - '+.pplx.ai'           # 短链接
+  
+  # === 后端服务与 API ===
+  - 'docs.perplexity.ai'
+  - 'research.perplexity.ai'
+  
+  # === 必不可少的第三方依赖 (防机器人与监控) ===
+  - '+.arkoselabs.com'    # **极重要**：人机验证，不通则无法登录
+  - '+.statsigapi.net'    # 功能开关与埋点
+  - '+.intercom.io'       # 在线客服系统
+
+# Midjourney - AI Image Generation
+  # === 官方 Web 端 ===
+  - '+.midjourney.com'
+  - '+.midjourney.io'     # 备用域名
+  - '+.midjourney.net'    # 备用域名
+  
+  # === 社区与文档 ===
+  - 'docs.midjourney.com'
+  - 'help.midjourney.com'
+
+  # === 图片 CDN 与资源 ===
+  - '+.mj-gallery.com'    # 旧版或特定资源库
+  - '+.discordapp.com'    # **极重要**：Midjourney 的图片实际托管在 Discord CDN
+  - '+.discord.com'       # **极重要**：登录授权与消息同步
+
+# Adobe Firefly & Creative Cloud AI
+  # === Firefly 核心入口 ===
+  - '+.firefly.adobe.com'
+  - '+.adobe.com'         # Adobe 核心域名 (建议全量代理以保证同步)
+  
+  # === 身份验证与登录 (极重要) ===
+  - 'auth.services.adobe.com'
+  - '+.adobelogin.com'
+  - 'ims-na1.adobelogin.com'
+  
+  # === 静态资源、字体与素材 (流量大头) ===
+  - '+.adobestatic.com'   # 核心静态资源
+  - '+.adobe.io'          # 许多 AI 接口跑在 io 后缀上
+  - '+.adobecc.com'       # 创意云同步
+  - '+.typekit.net'       # Adobe 字体服务
+  - '+.adobeexchange.com'
+  
+  # === 错误日志与监控 ===
+  - '+.adobe-api.com'
+  - '+.demdex.net'        # Adobe 常用的追踪/分析域名
+
+# Akool - AI Face Swap & Marketing Video
+  # === 核心官网与应用 ===
+  - '+.akool.com'
+  
+  # === 基础设施与分发 ===
+  - 'api.akool.com'       # 核心 API 接口
+  - 'static.akool.com'    # 静态资源缓存
+
