@@ -1,0 +1,19 @@
+# Telegram - Domain Only (No IP)
+payload:
+  # === 核心官网与 API ===
+  - '+.telegram.org'     # 主站与 API 控制
+  - '+.telegram.me'      # 官方镜像/短链
+  - '+.t.me'             # **极重要**：群组、频道、私聊的跳转短链接
+  
+  # === 静态资源、文章与媒体 ===
+  - '+.telegra.ph'       # **极重要**：Telegraph 即时查看文章
+  - '+.telesco.pe'       # 视频消息预览入口
+  - '+.graph.org'        # Telegra.ph 的备用域名
+  - '+.tdesktop.com'     # Telegram Desktop 官方资源
+  
+  # === 辅助服务与短链 ===
+  - '+.telegram.dog'
+  - '+.tx.me'            # 新型短链
+  - '+.nicegram.app'     # 常用第三方客户端 (如果你在用)
+  - '+.comments.app'     # 评论插件
+  - '+.quiz.directory'   # 投票/测验机器人相关
