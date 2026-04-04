@@ -1,6 +1,7 @@
 # > Netflix
 payload:
   # USER-AGENT,Argo*
+  - '+.fast.com'
   - '+.netflix.com'
   - '+.netflix.net'
   - '+.nflxext.com'
