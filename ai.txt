@@ -35,3 +35,18 @@ payload:
   - '+.runwayml.com'     # AI 视频生成
   - '+.pika.art'         # AI 视频生成
   - '+.leonardo.ai'      # AI 绘图
+
+# Manus AI - The General Purpose AI Agent
+  # === 核心官网与应用 ===
+  - '+.manus.ai'          # 主站与 Web App
+  - '+.manus.com'         # 备用/保护域名
+  
+  # === 身份验证 (极重要：Manus 使用 Clerk 服务) ===
+  - '+.clerk.com'         # Clerk 认证服务
+  - '+.clerk.accounts.dev' # Clerk 动态账号分配域名
+  
+  # === 基础设施与监控 (防止前端加载报错) ===
+  - '+.sentry.io'         # 错误日志监控 (AI 工具常用，不通可能报错)
+  - '+.posthog.com'       # 用户行为分析
+  - '+.intercom.io'       # 在线客服与引导
+  - '+.statsig.com'       # 功能开关与灰度发布
