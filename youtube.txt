@@ -4,7 +4,6 @@ payload:
   - '+.youtubei.googleapis.com'
   - '+.oauthaccountmanager.googleapis.com'
   - '+.youtube.com'
-  - '+.youtu.be'
   - '+.youtube-nocookie.com'
   - '+.yt.be'
   - '+.ytimg.com'
