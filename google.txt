@@ -131,6 +131,7 @@ payload:
   - 'publicca.googleapis.com'
   - '+.services.googleapis.cn'
   - '+.google'
+  - '+.goo.gl'
   - '+.google-access.net'
   - '+.google-analytics-cn.com'
   - '+.google-analytics.com'
