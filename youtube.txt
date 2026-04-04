@@ -18,6 +18,20 @@ payload:
   - '+.youtubemobilesupport.com'   # 移动端支持
   - '+.oauthaccountmanager.googleapis.com' # 登录验证相关
 
+  # === 针对 YouTube TV 与流媒体扩展 ===
+  - '+.youtube-tv.com'
+  - '+.googletv.com'
+  
+  # === 针对统计信息与底层 API ===
+  - 'jnn-pa.googleapis.com'
+  - 'video-stats.l.google.com'
+  - 'youtube.googleapis.com'
+  - 'yt3.googleapis.com'
+  
+  # === 针对网页 UI 与重定向 ===
+  - '+.youtube-ui.l.google.com'
+  - '+.redirector.googlevideo.com' # 负载均衡重定向 (已包含在核心段则可忽略)
+
   # === 全球地区分站 (保留你要求的全球化列表) ===
   # 注意：Clash 的 '+.youtube.com' 已自动匹配 '.com.hk' '.com.tw' 等后缀
   # 但为了极致兼容性，保留以下特定的非 .com 后缀
