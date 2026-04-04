@@ -36,20 +36,32 @@ payload:
   - '+.pika.art'         # AI 视频生成
   - '+.leonardo.ai'      # AI 绘图
 
-# Manus AI - The General Purpose AI Agent
-  # === 核心官网与应用 ===
-  - '+.manus.ai'          # 主站与 Web App
-  - '+.manus.com'         # 备用/保护域名
+# Manus AI - Full Coverage (Auth, CDN, API & Assets)
+  # === 核心主站与应用 ===
+  - '+.manus.ai'          # Web App 核心
+  - '+.manus.com'         # 备用与保护域名
   
-  # === 身份验证 (极重要：Manus 使用 Clerk 服务) ===
-  - '+.clerk.com'         # Clerk 认证服务
-  - '+.clerk.accounts.dev' # Clerk 动态账号分配域名
+  # === 身份验证 (Clerk 服务 - 极重要) ===
+  # Manus 使用 Clerk 托管登录，如果不代理这两个，登录按钮会失效
+  - '+.clerk.com'
+  - '+.clerk.accounts.dev'
+  - 'clerk.manus.ai'
   
-  # === 基础设施与监控 (防止前端加载报错) ===
-  - '+.sentry.io'         # 错误日志监控 (AI 工具常用，不通可能报错)
-  - '+.posthog.com'       # 用户行为分析
-  - '+.intercom.io'       # 在线客服与引导
-  - '+.statsig.com'       # 功能开关与灰度发布
+  # === 静态资源与 CDN (决定页面加载速度) ===
+  # Manus 前端常托管在 Vercel 及其分发网络
+  - '+.vercel.app'        # 备用预览
+  - '+.vercel-insights.com' # 性能监控
+  - '+.vitals.vercel-insights.com'
+  - '+.jsshell.com'       # 部分 JS 脚本分发
+  - '+.manuscdn.com'       # cdn
+  
+  # === 基础设施、监控与支付 ===
+  - '+.sentry.io'         # 错误日志 (前端报错常因它不通)
+  - '+.posthog.com'       # 行为分析
+  - '+.statsig.com'       # 功能开关与灰度测试
+  - '+.intercom.io'       # 在线客服
+  - '+.intercomcdn.com'   # 客服系统静态资源
+  - '+.stripe.com'        # 订阅支付入口
 
 # Perplexity AI - AI Search Engine
   # === 核心官网与应用 ===
