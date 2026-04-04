@@ -23,4 +23,4 @@ payload:
   - '+.tiktokv.us'
   - '+.tiktokw.eu'
   - '+.tiktokw.us'
-  - '+.vm.tiktok.com'
+  - '.vm.tiktok.com'

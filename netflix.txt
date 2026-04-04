@@ -8,6 +8,8 @@ payload:
   - '+.nflximg.net'
   - '+.nflxso.net'
   - '+.nflxvideo.net'
+  - '+.nflxvideo.com'
+  - '+.netflix.me'
   - '+.netflixdnstest0.com'
   - '+.netflixdnstest1.com'
   - '+.netflixdnstest2.com'
