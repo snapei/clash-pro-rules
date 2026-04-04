@@ -1,0 +1,77 @@
+# Google Global Optimized List
+payload:
+  # === 核心主干 (涵盖了 90% 的 Google 服务) ===
+  - '+.google.com'          # 已包含 scholar, mtalk, mail, time, dl, clients 等
+  - '+.googleapis.com'      # 已包含 firebase, fonts, apis 等
+  - '+.gstatic.com'         # 已包含 ssl, fonts, checkin 等
+  - '+.googleusercontent.com' # 用户上传内容、图片、头像
+  - '+.google'              # Google 新顶级域名
+  - '+.goo.gl'              # 官方短链
+  
+  # === 基础设施与广告 (包含双击、分析等) ===
+  - '+.doubleclick.net'
+  - '+.google-analytics.com'
+  - '+.googleanalytics.com'
+  - '+.googletagmanager.com'
+  - '+.googletagservices.com'
+  - '+.googlesyndication.com'
+  - '+.googleadservices.com'
+  
+  # === 中国区特定加速/跳转域名 (建议根据策略分流) ===
+#  - '+.google.cn'
+#  - '+.googleapis.cn'
+#  - '+.gstatic-cn.com'
+#  - '+.google-analytics-cn.com'
+#  - '+.googleadservices-cn.com'
+#  - '+.recaptcha.net'       # 验证码 (国内常用)
+#  - '+.recaptcha-cn.net'    # 验证码中国专用
+#  - '+.265.com'             # 谷歌中国导航
+  
+  # === 开发与特定服务 (Firebase & Cloud) ===
+  - '+.firebase.com'
+  - '+.firebaseio.com'
+  - '+.googleapps.com'
+  - '+.googlecode.com'
+  - '+.googlesource.com'
+  - '+.tensorflow.org'
+  - '+.ampproject.org'
+  
+  # === 全球 TLD 区域后缀 (保留你列表中的主要非 .com 部分) ===
+  # 实际上大多数已通过 +.google.com 及其重定向处理，此处保留必要的顶级后缀
+  - '+.google.de'
+  - '+.google.fr'
+  - '+.google.jp'
+  - '+.google.co.jp'
+  - '+.google.co.uk'
+  - '+.google.com.hk'
+  - '+.google.com.tw'
+  - '+.google.ru'
+
+# === 补齐下载与分发 (解决 Chrome/Play 商店更新问题) ===
+  - '+.gvt1.com'
+  - '+.gvt2.com'
+  - '+.gvt3.com'
+  - '+.gcr.io'              # 容器镜像 (开发必备)
+  - '+.googlesource.com'    # 源代码仓库
+  
+  # === 补齐 AI 服务 (Gemini & DeepMind) ===
+  - '+.gemini.google.com'
+  - '+.deepmind.com'
+  - '+.deepmind.google'
+  - '+.generativelanguage.googleapis.com'
+  - '+.ai.google'
+  - '+.makersuite.google.com'
+  
+  # === 补齐 Android 与系统生态 ===
+  - '+.android.com'
+  - '+.android.clients.google.com'
+  - '+.play.google.com'     # Play 商店主入口
+  - '+.ggpht.com'           # 存储用户头像、商店图片 (已在 YouTube 列表则可忽略)
+  
+  # === 补齐其他官方资产 ===
+  - '+.g.co'                # 核心短链
+  - '+.withgoogle.com'
+  - '+.google.org'
+  - '+.blogger.com'         # 博客平台
+  - '+.blogspot.com'        # 博客平台
+

@@ -1,0 +1,59 @@
+payload:
+  # === 核心主干 ===
+  - '+.apple.com'
+  - '+.mzstatic.com'     # App Store 资源
+  - '+.itunes.com'       # 媒体与同步
+  - '+.aaplimg.com'      # 系统更新 CDN
+  - '+.cdn-apple.com'    # 官方 CDN
+  - '+.apple-cloudkit.com' # 云端数据库
+  - '+.apple-support.com'  # 技术支持
+  - '+.appleid.com'      # 账户服务
+  - '+.apple-dns.net'    # 基础设施
+  - '+.me.com'           # 早期 iCloud 遗留域名
+
+  # === 硬件与软件服务 ===
+  - '+.apple-mapkit.com' # 地图服务
+  - '+.apple-pay.com'    # 支付服务
+  - '+.apple.news'       # Apple News
+  - '+.applestore.com'   # 零售店
+  - '+.appsto.re'        # 短链接
+  - '+.itun.es'          # 短链接
+  - '+.shazam.com'       # 音乐识别
+  - '+.swift.org'        # 开发相关
+  - '+.webkit.org'       # 浏览器引擎相关
+  
+  # === 苹果全球国家/地区特定域名 ===
+  # --- 亚太地区 ---
+  - '+.apple.cn'
+  - '+.apple.com.cn'
+  - '+.apple.co.jp'
+  - '+.apple.co.kr'
+  - '+.apple.com.tw'
+  - '+.apple.com.hk'
+  - '+.apple.sg'
+  - '+.apple.com.my'
+  - '+.apple.co.th'
+
+  # --- 美洲与欧洲 ---
+  - '+.apple.ca'
+  - '+.apple.co.uk'
+  - '+.apple.de'
+  - '+.apple.fr'
+  - '+.apple.it'
+  - '+.apple.es'
+  - '+.apple.ru'
+  
+  # --- 其他你列表中的 TLD (可全量保留) ---
+  - '+.apple.ae'
+  - '+.apple.at'
+  - '+.apple.be'
+  - '+.apple.bg'
+  # ... (此处省略你贴出的其他条目)
+
+  # === 官方关联品牌与技术 ===
+  - '+.beatsbydre.com'   # Beats 官方
+  - '+.beats1.cc'        # 广播
+  - '+.researchkit.org'  # 医疗框架
+  - '+.carekit.org'      # 医疗框架
+  - '+.foundationdb.org' # 底层数据库
+  - '+.cups.org'         # 打印相关

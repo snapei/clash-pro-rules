@@ -1,0 +1,32 @@
+# Netflix Global Comprehensive List
+payload:
+  # === 核心主站与 API ===
+  - '+.netflix.com'
+  - '+.netflix.net'
+  - '+.netflix.io'       # 补全：关键 API
+  - '+.netflix.me'       # 测速与短链
+  - '+.fast.com'         # 核心测速
+  
+  # === 视频流与静态资源 (流量大头) ===
+  - '+.nflxvideo.net'    # 最核心：视频流
+  - '+.nflxvideo.com'    # 补全：视频流备用
+  - '+.nflximg.com'      # 海报与图片
+  - '+.nflximg.net'      # 海报与图片
+  - '+.nflxext.com'      # 关键扩展资源
+  - '+.nflxso.net'       # 静态内容
+  
+  # === DNS 与连接测试 ===
+  - '+.netflixdnstest0.com'
+  - '+.netflixdnstest1.com'
+  - '+.netflixdnstest2.com'
+  - '+.netflixdnstest3.com'
+  - '+.netflixdnstest4.com'
+  - '+.netflixdnstest5.com'
+  - '+.netflixdnstest6.com'
+  - '+.netflixdnstest7.com'
+  - '+.netflixdnstest8.com'
+  - '+.netflixdnstest9.com'
+
+  # === 其它官方关联 ===
+  - '+.netflixstudios.com'
+  - '+.netflixtechblog.com'

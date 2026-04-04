@@ -1,0 +1,34 @@
+# Meta Series (Facebook, Instagram, WhatsApp, Threads, Oculus)
+payload:
+  # === Facebook & Messenger ===
+  - '+.facebook.com'
+  - '+.facebook.net'
+  - '+.fb.com'
+  - '+.fb.me'
+  - '+.fb.watch'
+  - '+.fbsbx.com'       # 静态资源与附件
+  - '+.m.me'            # Messenger 短链
+  - '+.messenger.com'   # Messenger 主站
+
+  # === Instagram & Threads (视觉社交) ===
+  - '+.instagram.com'
+  - '+.instagr.am'      # IG 短链
+  - '+.cdninstagram.com' # IG 核心 CDN (图片与视频流)
+  - '+.threads.net'     # Threads 社交主站
+
+  # === WhatsApp (即时通讯) ===
+  - '+.whatsapp.com'
+  - '+.whatsapp.net'    # **极重要**：后端同步与文件传输
+  - '+.wa.me'           # 拨打/加好友短链
+
+  # === Meta 基础设施与元宇宙 (Oculus) ===
+  - '+.meta.com'        # Meta 官网
+  - '+.meta.com.hk'     # 地区后缀
+  - '+.oculus.com'
+  - '+.oculuscdn.com'   # VR 设备更新与资源
+  - '+.facebook.org'    # 公益/开发者相关
+  - '+.workplace.com'   # 企业办公版
+
+  # === 核心 CDN 骨干网 (分流必选) ===
+  - '+.fbcdn.net'       # **最核心**：Facebook/IG 全球图片视频分发
+  - '+.tfbnw.net'       # Meta 内部骨干网测试域名

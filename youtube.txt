@@ -1,0 +1,68 @@
+# YouTube Global Optimized List
+payload:
+  # === 核心视频流与交互 (最核心，流量大头) ===
+  - '+.googlevideo.com'            # 视频数据分发 (最关键)
+  - '+.youtube.com'                # 主站域名 (已包含 www, m 等所有子域名)
+  - '+.ytimg.com'                  # 静态资源、缩略图、头像
+  - '+.ggpht.com'                  # Google 托管图片 (YouTube 常用)
+  - '+.youtubei.googleapis.com'    # 客户端内部 API (App 使用)
+  - '+.yt.be'                      # 官方短链
+  - '+.youtu.be'                   # 官方短链
+  - '+.youtube-nocookie.com'       # 无 Cookie 嵌入版
+  
+  # === 功能与附属服务 ===
+  - '+.youtubegaming.com'          # 游戏版
+  - '+.youtubekids.com'            # 儿童版
+  - '+.youtubeeducation.com'       # 教育版
+  - '+.youtubefanfest.com'         # 粉丝节
+  - '+.youtubemobilesupport.com'   # 移动端支持
+  - '+.oauthaccountmanager.googleapis.com' # 登录验证相关
+
+  # === 针对 YouTube TV 与流媒体扩展 ===
+  - '+.youtube-tv.com'
+  - '+.googletv.com'
+  
+  # === 针对统计信息与底层 API ===
+  - 'jnn-pa.googleapis.com'
+  - 'video-stats.l.google.com'
+  - 'youtube.googleapis.com'
+  - 'yt3.googleapis.com'
+  
+  # === 针对网页 UI 与重定向 ===
+  - '+.youtube-ui.l.google.com'
+  - '+.redirector.googlevideo.com' # 负载均衡重定向 (已包含在核心段则可忽略)
+
+  # === 全球地区分站 (保留你要求的全球化列表) ===
+  # 注意：Clash 的 '+.youtube.com' 已自动匹配 '.com.hk' '.com.tw' 等后缀
+  # 但为了极致兼容性，保留以下特定的非 .com 后缀
+  - '+.youtube.ae'
+  - '+.youtube.at'
+  - '+.youtube.be'
+  - '+.youtube.bg'
+  - '+.youtube.ca'
+  - '+.youtube.ch'
+  - '+.youtube.cl'
+  - '+.youtube.de'
+  - '+.youtube.dk'
+  - '+.youtube.es'
+  - '+.youtube.fi'
+  - '+.youtube.fr'
+  - '+.youtube.hk'
+  - '+.youtube.ie'
+  - '+.youtube.in'
+  - '+.youtube.it'
+  - '+.youtube.jp'
+  - '+.youtube.kr'
+  - '+.youtube.mx'
+  - '+.youtube.my'
+  - '+.youtube.nl'
+  - '+.youtube.no'
+  - '+.youtube.pl'
+  - '+.youtube.pt'
+  - '+.youtube.ro'
+  - '+.youtube.ru'
+  - '+.youtube.se'
+  - '+.youtube.sg'
+  - '+.youtube.tv'
+  - '+.youtube.uk'
+  - '+.youtube.vn'
