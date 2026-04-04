@@ -1,0 +1,38 @@
+# Amazon Global Comprehensive List
+payload:
+  # === 核心电商与账户 (Shopping & Account) ===
+  - '+.amazon.com'
+  - '+.amazon.co.jp'     # 经常海淘必加
+  - '+.amazon.co.uk'
+  - '+.amazon.de'
+  - '+.amazon.it'
+  - '+.amazon.ca'
+  - '+.amazon.com.au'
+  - '+.amazon.com.br'
+  - '+.amazon.com.mx'
+#  - '+.amazon.cn'         # **注意**：中国区入口（建议直连）
+
+  # === 静态资源与图片 CDN (流量大头) ===
+  - '+.media-amazon.com'  # **极重要**：商品图片、视频预览
+  - '+.images-amazon.com' # 旧版图片 CDN
+  - '+.ssl-images-amazon.com'
+  - '+.assoc-amazon.com'  # 联盟营销相关
+  - '+.completion.amazon.com' # 搜索建议
+
+  # === Prime Video (全球流媒体) ===
+  - '+.primevideo.com'    # 核心域名
+  - '+.pv-cdn.net'        # **极重要**：视频流分发
+  - '+.atv-ps.amazon.com' # 播放器验证
+  - '+.avod-mp4s.amazon.com'
+
+  # === AWS & 开发者服务 (Cloud Computing) ===
+  - '+.amazonaws.com'     # **最核心**：几乎所有 AWS 服务的基础
+  - '+.awsstatic.com'     # 静态资源
+  - '+.amazon-adsystem.com' # 广告与追踪
+  - '+.aws.amazon.com'
+
+  # === 硬件设备与服务 (Kindle, Alexa) ===
+  - '+.kindle.com'
+  - '+.alexa.com'
+  - '+.amazon-devices.com'
+  - '+.amazontrust.com'   # 证书验证

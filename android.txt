@@ -1,0 +1,39 @@
+# Android System & Google Play Comprehensive List
+payload:
+  # === Android 系统核心 (系统更新与基础服务) ===
+  - '+.android.com'
+  - '+.android.clients.google.com'
+  - '+.androidhost.xyz'
+  - '+.gvt1.com'             # **极重要**：系统更新、补丁下载
+  - '+.gvt2.com'             # **极重要**：系统组件分发
+  - '+.gvt3.com'
+  - '+.1e100.net'            # Google 全球骨干网（Android 常用此域名通信）
+
+  # === Google Play 商店 (应用下载与元数据) ===
+  - '+.play.google.com'      # 商店主入口
+  - '+.googleplay.com'
+  - '+.googleapis.com'       # 包含 Android API (建议保留全量)
+  - '+.ggpht.com'            # 商店图标、用户评价图片
+  - '+.googlevideo.com'      # 商店内的 App 演示视频
+
+  # === 消息推送 (FCM / Firebase Cloud Messaging) ===
+  - 'mtalk.google.com'       # **核心**：Android 消息推送长连接
+  - 'alt1-mtalk.google.com'
+  - 'alt2-mtalk.google.com'
+  - 'alt3-mtalk.google.com'
+  - 'alt4-mtalk.google.com'
+  - 'alt5-mtalk.google.com'
+  - 'alt6-mtalk.google.com'
+  - 'alt7-mtalk.google.com'
+  - 'alt8-mtalk.google.com'
+
+  # === 连通性检测 (Captive Portal - 解决 WiFi 叹号) ===
+  - 'connectivitycheck.gstatic.com'
+  - 'connectivitycheck.android.com'
+  - 'clients3.google.com'
+  - 'play.googleapis.com'
+
+  # === 数字版权与安全 (Widevine & SafetyNet) ===
+  - '+.widevine.com'         # Netflix/Disney+ 高清播放必须
+  - '+.pki.goog'             # 证书验证
+  - 'attestation.googleapis.com' # 设备安全性验证
