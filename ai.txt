@@ -18,11 +18,6 @@ payload:
   - '+.proactive.google.com'
   - 'copilot.microsoft.com'
   - 'sydney.bing.com' # Copilot 核心后端
-  
-# xAI & Grok (Elon Musk's AI)
-  - '+.x.ai'          # xAI 官方域名
-  - '+.grok.com'      # Grok 对话主站（极重要）
-  - '+.xai.com'       # 备用与公司官网
 
 # AI Search & Productivity
   - '+.perplexity.ai'    # AI 搜索
