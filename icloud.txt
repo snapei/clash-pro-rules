@@ -3,6 +3,7 @@ payload:
   # === 核心入口与认证 ===
   - '+.icloud.com'
   - '+.icloud.com.cn'
+  - '+.icloud.net.cn'
   - '+.appleid.com'
   - '+.apple-cloudkit.com'
   

@@ -1,7 +1,6 @@
 payload:
   # === 核心主干 ===
   - '+.apple.com'
-  - '+.icloud.com'
   - '+.mzstatic.com'     # App Store 资源
   - '+.itunes.com'       # 媒体与同步
   - '+.aaplimg.com'      # 系统更新 CDN
@@ -23,12 +22,6 @@ payload:
   - '+.swift.org'        # 开发相关
   - '+.webkit.org'       # 浏览器引擎相关
   
-  # === 中国区特定加速 ===
-  - '+.apple.com.cn'
-  - '+.apple.cn'
-  - '+.icloud.com.cn'
-  - '+.icloud.net.cn'
-
   # === 苹果全球国家/地区特定域名 ===
   # --- 亚太地区 ---
   - '+.apple.cn'
