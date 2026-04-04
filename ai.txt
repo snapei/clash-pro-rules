@@ -1,0 +1,42 @@
+# OpenAI / ChatGPT
+payload:
+  - '+.openai.com'
+  - '+.chatgpt.com'      # **极重要**：现在的默认对话域名
+  - '+.oaistatic.com'    # 静态资源、头像、UI 组件
+  - '+.oaiusercontent.com' # 用户上传的图片、文档
+  - '+.chatgpt.live.com'
+  - '+.intercom.io'      # 部分客服/引导组件
+
+# Anthropic / Claude
+  - '+.anthropic.com'
+  - '+.claude.ai'
+  - '+.claudeusercontent.com'
+
+# Gemini & Copilot (AI Specific)
+  - '+.gemini.google.com'
+  - '+.generativelanguage.googleapis.com' # Gemini API 核心
+  - '+.proactive.google.com'
+  - 'copilot.microsoft.com'
+  - 'sydney.bing.com' # Copilot 核心后端
+  
+# xAI & Grok (Elon Musk's AI)
+  - '+.x.ai'          # xAI 官方域名
+  - '+.grok.com'      # Grok 对话主站（极重要）
+  - '+.xai.com'       # 备用与公司官网
+
+# AI Search & Productivity
+  - '+.perplexity.ai'    # AI 搜索
+  - '+.poe.com'          # Quora 旗下的 AI 聚合
+  - '+.deepl.com'        # AI 翻译 (极重要)
+  - '+.groq.com'         # 极速推理平台
+  - '+.mistral.ai'       # 法国最强 AI
+  - '+.perplexity.ai'
+
+# AI Creative & Developer
+  - '+.huggingface.co'   # **极重要**：全球最大的 AI 模型仓库
+  - '+.hf.co'            # 短链
+  - '+.civitai.com'      # SD 模型站
+  - '+.midjourney.com'
+  - '+.runwayml.com'     # AI 视频生成
+  - '+.pika.art'         # AI 视频生成
+  - '+.leonardo.ai'      # AI 绘图

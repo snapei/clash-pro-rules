@@ -1,0 +1,16 @@
+# X (Twitter) Global Comprehensive List
+payload:
+  # === 核心主站 ===
+  - '+.x.com'
+  - '+.twitter.com'
+  - '+.t.co'             # **极重要**：X 所有的站内跳转短链
+  - '+.x.ai'             # xAI 官网
+  - '+.grok.com'         # Grok AI 入口
+
+  # === 静态资源与流媒体 (流量大头) ===
+  - '+.twimg.com'        # **极重要**：图片、头像、视频缓存
+  - '+.twitter.com.akadns.net'
+  - '+.video.twimg.com'
+  - '+.abs.twimg.com'
+  - '+.periscope.tv'      # 视频直播相关
+  - '+.pscp.tv'           # 视频直播相关
