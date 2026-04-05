@@ -1,0 +1,22 @@
+# LINE - Messaging, Voice & Media
+payload:
+  # === 核心主站与 API ===
+  - '+.line.me'
+  - '+.line-apps.com'
+  - '+.linecorp.com'
+  
+  # === 短链接与辅助服务 ===
+  - '+.lin.ee'              # 极重要：各种官方推送、活动跳转短链
+  - '+.linefriends.com'     # 周边与贴图相关
+  
+  # === 核心 CDN (贴图、照片、视频、VOOM) ===
+  - '+.line-cdn.net'        # 核心内容分发
+  - '+.line-scdn.net'       # 核心静态资源 (表情包秒开的关键)
+  
+  # === 测试/备用接口 ===
+  - '+.line-apps-rc.com'
+  - '+.line-apps-beta.com'
+  
+  # === 历史遗留底层依赖 ===
+  # LINE 早期是 Naver Japan 开发的，至今部分底层 API 和游戏登录仍会调用
+  - '+.naver.jp'
