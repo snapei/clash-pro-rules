@@ -39,6 +39,7 @@ payload:
 # Manus AI - Full Coverage (Auth, CDN, API & Assets)
   # === 核心主站与应用 ===
   - '+.manus.ai'          # Web App 核心
+  - '+.manus.im'
   - '+.manus.com'         # 备用与保护域名
   
   # === 身份验证 (Clerk 服务 - 极重要) ===
