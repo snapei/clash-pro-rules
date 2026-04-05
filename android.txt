@@ -14,7 +14,6 @@ payload:
   - '+.googleplay.com'
   - '+.googleapis.com'       # 包含 Android API (建议保留全量)
   - '+.ggpht.com'            # 商店图标、用户评价图片
-#  - '+.googlevideo.com'      # 商店内的 App 演示视频
 
   # === 消息推送 (FCM / Firebase Cloud Messaging) ===
   - 'mtalk.google.com'       # **核心**：Android 消息推送长连接
