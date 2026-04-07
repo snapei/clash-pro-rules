@@ -1,0 +1,25 @@
+# Chaturbate - Full Coverage (Live Stream, CDN, WebRTC & Billing)
+payload:
+  # === 核心主站与防封锁备用 ===
+  - '+.chaturbate.com'
+  - '+.chaturbate.me'
+  - '+.cb.dev'
+
+  # === 核心视频流与全新主干 CDN (大流量) ===
+  - '+.mmcdn.com'               # 新版流媒体主干 (含 live 和 thumb 子域名)
+  - '+.highwebmedia.com'        # 母公司基础设施与旧版流媒体
+  - '+.hwmstreams.com'          # 底层推流媒体分发网络
+
+  # === WebRTC 实时通信节点 (防转圈/卡顿关键) ===
+  - '+.cbwoc.com'               
+
+  # === 前端静态资源 (JS/CSS/UI 核心加速) ===
+  - '+.cbjas.com'               
+  - '+.cbjas2.com'
+  - '+.cbjas3.com'
+
+  # === 图像资源 (头像、房间预览动态图) ===
+  - '+.roomimg.com'             
+
+  # === 独立支付与账单网关 (防风控拦截) ===
+  - '+.securegatewayaccess.com'
