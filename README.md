@@ -18,7 +18,7 @@
 
 ### 无法访问 `raw.githubusercontent.com`的解决方法
 
-- 方法一，修改系统hosts文件，添加151.101.108.133 raw.githubusercontent.com (备注，这是我的IP查询出来的，请自行按照自己网络查询) \
+- 方法一，修改系统hosts文件，添加`151.101.108.133 raw.githubusercontent.com` (备注，这是我的IP查询出来的，请自行按照自己网络查询) \
   查询解析的IP地址：`https://ipaddress.com/website/raw.githubusercontent.com`  
 - 方法二，如果`raw.githubusercontent.com`无法链接，请使用备选链接`cdn.jsdelivr.net` 
 - 方法三，选择`GitHub520`项目，请使用下载hosts文件`https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@main/hosts` 
