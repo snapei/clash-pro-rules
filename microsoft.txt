@@ -1,42 +1,30 @@
-# Microsoft Global Comprehensive List
 payload:
-  # === 核心系统与账户 (Windows, Microsoft Account) ===
-  - '+.microsoft.com'
-  - '+.windows.com'
-  - '+.live.com'
-  - '+.microsoftonline.com'
-  - '+.microsoft-cloud.com'
-  - '+.msn.com'
-  - '+.msauth.net'      # 关键：账户登录验证
-  - '+.msftncsi.com'    # 关键：Windows 网络连接状态检测
+  # === 核心系统与账户 (解决 SNI 阻断与登录超时) ===
+  - '+.live.com'             # 核心验证 (login.live.com 等)
+  - '+.microsoftonline.com'  # 企业/教育账户海外验证
+  - '+.msn.com'              # MSN 国际版 (国内直连通常会被劫持回国内特供版)
+  - '+.msauth.net'           # 关键：账户登录验证
 
-  # === 办公与生产力 (Office, Outlook, OneDrive) ===
-  - '+.office.com'
-  - '+.office365.com'
-  - '+.outlook.com'
-  - '+.onedrive.com'
-  - '+.1drv.com'
-  - '+.skype.com'
-  - '+.sharepoint.com'
+  # === 办公与生产力 (仅保留网页端与分享链接) ===
+  - '+.outlook.com'          # 网页版 Outlook 极易被干扰
+  - '+.1drv.com'             # OneDrive 分享短链 (国内直连通常打不开)
+  - '+.skype.com'            # Skype 国际版通信连接
 
-  # === 开发与云服务 (Azure, Visual Studio) ===
-  - '+.azure.com'
-  - '+.azureedge.net'
-  - '+.azurewebsites.net'
-  - '+.visualstudio.com'
-  - '+.vscode.dev'
-  - '+.aspnetcdn.com'
+  # === 开发与云服务 (仅保留易被墙的海外托管与开发套件) ===
+  - '+.azurewebsites.net'    # 大量海外个人开发者应用托管于此，极易被阻断
+  - '+.visualstudio.com'     # VS 扩展商店，直连经常超时报错
+  - '+.vscode.dev'           # Web IDE 服务
 
-  # === 搜索与资讯 (Bing) ===
+  # === 搜索与资讯 (必须代理，用于锁定 Bing 国际版与 Copilot) ===
   - '+.bing.com'
   - '+.bing.net'
   - '+.bing.visualsearch.com'
 
-  # === 社交与职场 (LinkedIn) ===
+  # === 社交与职场 (已退出中国大陆，必须走代理) ===
   - '+.linkedin.com'
-  - '+.licdn.com'       # LinkedIn 静态资源
+  - '+.licdn.com'
 
-  # === 游戏娱乐 (Xbox) ===
+  # === 游戏娱乐 (解决 Xbox 登录困难与外服元数据获取) ===
   - '+.xbox.com'
   - '+.xboxlive.com'
-  - '+.playfabapi.com'  # Xbox 游戏后台 API
+  - '+.playfabapi.com'
