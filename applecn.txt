@@ -1,0 +1,37 @@
+payload:
+  # === 苹果中国区专属基建 (必选直连) ===
+  - '+.apple.cn'
+  - '+.apple.com.cn'
+  - '+.icloud.com.cn'
+  - '+.icloud.net.cn'
+  - '+.icloud-content.com.cn'
+  - '+.gcbd.cloud'             # 云上贵州底层存储
+
+  # === 核心底层 CDN 与大文件传输 (触发 AX6 硬件加速的核心) ===
+  # 负责 App 下载、Vision Pro/Mac 系统更新、AirPods 固件推送
+  - '+.mzstatic.com'           # 极其重要：App Store 静态资源与安装包
+  - '+.aaplimg.com'            # 系统更新与大文件分发
+  - '+.cdn-apple.com'          # 通用 CDN (覆盖全线硬件)
+  - '+.apple-dns.net'          # 基础设施与 CDN 调度
+  - '+.icloud-content.com'     # 极其重要：美区账号的真实云盘/相册数据传输
+
+  # === APNs 实时推送通道 (必须直连，否则全家桶断联) ===
+  - '+.push.apple.com'         # 确保 iPhone/Watch 微信推送、电话呼入秒达
+  - '+.findmymobile.me'
+  
+  # === 本地化硬件服务 (国内直连体验最佳) ===
+  - '+.apple-mapkit.com'       # 苹果地图 (底层调用高德数据)
+  - '+.ls.apple.com'           # 位置服务 (Location Services)
+  - '+.apple-pay.com'          # Apple Pay 银联支付网关
+  - '+.smp-device-content.apple.com' # Watch/AirPods/Vision Pro 等设备的配对动画与表盘资源
+
+  # === Apple Music 与流媒体娱乐 ===
+  - '+.music.apple.com'        # 音乐网页端与 API
+  - '+.audio-ssl.itunes.apple.com' # Apple Music 无损音频流 (国内有极速节点)
+  - '+.mvod.itunes.apple.com'  # 视频与 MV 流媒体
+
+  # === 遗留与基础兜底服务 ===
+  - '+.me.com'
+  - '+.mac.com'
+  - '+.apple-support.com'      # 售后支持与诊断
+  - '+.apple.com'              # 兜底：所有未精确匹配的 Apple 基础域名
