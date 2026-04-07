@@ -1,50 +1,19 @@
 payload:
-  # === 核心验证与账户通行证 (Apple ID) ===
-  # 解决：设备激活、登录转圈、美区支付与订阅验证失败
-  - 'appleid.apple.com'
-  - 'idmsa.apple.com'
-  - 'gsa.apple.com'
-  - 'setup.icloud.com'
-
-  # === App Store 与 iTunes 商店核心 API ===
-  # 解决：美区商店首页空白、无法获取下载链接、应用内购报错
-  - 'apps.apple.com'
-  - 'itunes.apple.com'
-  - 'buy.itunes.apple.com'
-  - 'bag.itunes.apple.com'
-  - 'api-edge.apps.apple.com'
-
-  # === iCloud 跨设备控制流 (非文件传输) ===
-  # 解决：Mac/iPhone/iPad 之间的备忘录、提醒事项、钥匙串同步延迟
-  - '+.icloud.com'           # iCloud 网页端及核心 API
-  - '+.apple-cloudkit.com'   # 第三方 App 的 iCloud 同步数据库
-
-  # === Apple TV+ 与 Vision Pro 视频流媒体 ===
-  # 解决：Apple TV App 无法加载剧集、美区版权视频无法播放
-  - '+.apple.tv'
-  - '+.tv.apple.com'
-  - '+.tvapp.apple.com'
-  - 'play-edge.itunes.apple.com' # 核心视频 DRM 授权验证
-
-  # === Apple Music & Podcasts (元数据与播客) ===
-  # 解决：美区独占歌单不刷新、Beats 1 电台无法收听、播客进度不同步
-  - 'amp-api.music.apple.com'    # 音乐界面 API
-  - 'amp-api.podcasts.apple.com' # 播客界面 API
-  - 'radio.itunes.apple.com'     # 全球电台直播
-  - 'bookkeeper.itunes.apple.com'# 跨设备播放进度同步
-  - '+.books.apple.com'          # Apple Books 美区书店
-
-  # === 严格锁区服务 (Apple News & Fitness+) ===
-  # 解决：国内直接屏蔽的服务
+  # === 严格锁区服务 (国内直接屏蔽) ===
   - '+.apple.news'
   - 'news-edge.apple.com'
   - 'news-client.apple.com'
-  - '+.fitness.apple.com'        # Watch 的 Fitness+ 健身课程
+  - '+.fitness.apple.com'        # Fitness+ 健身
 
-  # === Siri、聚焦搜索与智能交互 ===
-  # 解决：Siri 响应慢、跨应用 Spotlight 搜索无法获取维基百科或全球网络结果
+  # === Apple TV+ 视频流媒体 (国区无此服务) ===
+  - '+.apple.tv'
+  - '+.tv.apple.com'
+  - '+.tvapp.apple.com'
+  - 'play-edge.itunes.apple.com'
+
+  # === Siri 与聚焦搜索 (为了获取不受限的维基百科和全球搜索结果) ===
   - 'api.smoot.apple.com'
   - 'siri.apple.com'
 
-  # === 开发者生态 ===
-  - '+.developer.apple.com'      # 苹果开发者门户
+  # === 开发者生态 (国内直连经常抽风) ===
+  - '+.developer.apple.com'
