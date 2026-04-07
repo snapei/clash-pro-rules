@@ -1,59 +1,50 @@
 payload:
-  # === 核心主干 ===
-  - '+.apple.com'
-  - '+.mzstatic.com'     # App Store 资源
-  - '+.itunes.com'       # 媒体与同步
-  - '+.aaplimg.com'      # 系统更新 CDN
-  - '+.cdn-apple.com'    # 官方 CDN
-  - '+.apple-cloudkit.com' # 云端数据库
-  - '+.apple-support.com'  # 技术支持
-  - '+.appleid.com'      # 账户服务
-  - '+.apple-dns.net'    # 基础设施
-  - '+.me.com'           # 早期 iCloud 遗留域名
+  # === 核心验证与账户通行证 (Apple ID) ===
+  # 解决：设备激活、登录转圈、美区支付与订阅验证失败
+  - 'appleid.apple.com'
+  - 'idmsa.apple.com'
+  - 'gsa.apple.com'
+  - 'setup.icloud.com'
 
-  # === 硬件与软件服务 ===
-  - '+.apple-mapkit.com' # 地图服务
-  - '+.apple-pay.com'    # 支付服务
-  - '+.apple.news'       # Apple News
-  - '+.applestore.com'   # 零售店
-  - '+.appsto.re'        # 短链接
-  - '+.itun.es'          # 短链接
-  - '+.shazam.com'       # 音乐识别
-  - '+.swift.org'        # 开发相关
-  - '+.webkit.org'       # 浏览器引擎相关
-  
-  # === 苹果全球国家/地区特定域名 ===
-  # --- 亚太地区 ---
-  - '+.apple.cn'
-  - '+.apple.com.cn'
-  - '+.apple.co.jp'
-  - '+.apple.co.kr'
-  - '+.apple.com.tw'
-  - '+.apple.com.hk'
-  - '+.apple.sg'
-  - '+.apple.com.my'
-  - '+.apple.co.th'
+  # === App Store 与 iTunes 商店核心 API ===
+  # 解决：美区商店首页空白、无法获取下载链接、应用内购报错
+  - 'apps.apple.com'
+  - 'itunes.apple.com'
+  - 'buy.itunes.apple.com'
+  - 'bag.itunes.apple.com'
+  - 'api-edge.apps.apple.com'
 
-  # --- 美洲与欧洲 ---
-  - '+.apple.ca'
-  - '+.apple.co.uk'
-  - '+.apple.de'
-  - '+.apple.fr'
-  - '+.apple.it'
-  - '+.apple.es'
-  - '+.apple.ru'
-  
-  # --- 其他你列表中的 TLD (可全量保留) ---
-  - '+.apple.ae'
-  - '+.apple.at'
-  - '+.apple.be'
-  - '+.apple.bg'
-  # ... (此处省略你贴出的其他条目)
+  # === iCloud 跨设备控制流 (非文件传输) ===
+  # 解决：Mac/iPhone/iPad 之间的备忘录、提醒事项、钥匙串同步延迟
+  - '+.icloud.com'           # iCloud 网页端及核心 API
+  - '+.apple-cloudkit.com'   # 第三方 App 的 iCloud 同步数据库
 
-  # === 官方关联品牌与技术 ===
-  - '+.beatsbydre.com'   # Beats 官方
-  - '+.beats1.cc'        # 广播
-  - '+.researchkit.org'  # 医疗框架
-  - '+.carekit.org'      # 医疗框架
-  - '+.foundationdb.org' # 底层数据库
-  - '+.cups.org'         # 打印相关
+  # === Apple TV+ 与 Vision Pro 视频流媒体 ===
+  # 解决：Apple TV App 无法加载剧集、美区版权视频无法播放
+  - '+.apple.tv'
+  - '+.tv.apple.com'
+  - '+.tvapp.apple.com'
+  - 'play-edge.itunes.apple.com' # 核心视频 DRM 授权验证
+
+  # === Apple Music & Podcasts (元数据与播客) ===
+  # 解决：美区独占歌单不刷新、Beats 1 电台无法收听、播客进度不同步
+  - 'amp-api.music.apple.com'    # 音乐界面 API
+  - 'amp-api.podcasts.apple.com' # 播客界面 API
+  - 'radio.itunes.apple.com'     # 全球电台直播
+  - 'bookkeeper.itunes.apple.com'# 跨设备播放进度同步
+  - '+.books.apple.com'          # Apple Books 美区书店
+
+  # === 严格锁区服务 (Apple News & Fitness+) ===
+  # 解决：国内直接屏蔽的服务
+  - '+.apple.news'
+  - 'news-edge.apple.com'
+  - 'news-client.apple.com'
+  - '+.fitness.apple.com'        # Watch 的 Fitness+ 健身课程
+
+  # === Siri、聚焦搜索与智能交互 ===
+  # 解决：Siri 响应慢、跨应用 Spotlight 搜索无法获取维基百科或全球网络结果
+  - 'api.smoot.apple.com'
+  - 'siri.apple.com'
+
+  # === 开发者生态 ===
+  - '+.developer.apple.com'      # 苹果开发者门户
