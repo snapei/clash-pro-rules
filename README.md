@@ -18,9 +18,10 @@
 
 ### 无法访问 `raw.githubusercontent.com`的解决方法
 
-- 方法一，修改系统hosts文件，添加151.101.108.133 raw.githubusercontent.com (备注，这是我的IP查询出来的，请自行按照自己网络查询) \
+- 方法一，修改系统hosts文件，添加`151.101.108.133 raw.githubusercontent.com` (备注，这是我的IP查询出来的，请自行按照自己网络查询) \
   查询解析的IP地址：`https://ipaddress.com/website/raw.githubusercontent.com`  
 - 方法二，如果`raw.githubusercontent.com`无法链接，请使用备选链接`cdn.jsdelivr.net` 
+- 方法三，选择`GitHub520`项目，请使用下载hosts文件`https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@main/hosts` 
 
 ### cdn.jsdelivr.net 无法刷新缓存解决方法
 - 将 cdn.jsdelivr.net中的cdn改为 purge
@@ -44,9 +45,9 @@
 - **Apple 域名列表 apple.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/apple.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/apple.txt)
-- **iCloud 域名列表 icloud.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/icloud.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/icloud.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/icloud.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/icloud.txt)
+- **applecn 域名列表 applecn.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/applecn.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/applecn.txt)
 - **Google 域名列表 google.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt)

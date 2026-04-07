@@ -1,0 +1,21 @@
+# Snapchat & Bitmoji Comprehensive List
+payload:
+  # === 核心主站与 API ===
+  - '+.snapchat.com'
+  - '+.snap.com'
+  
+  # === 核心 CDN 与媒体流 (极重要：决定图片/视频加载速度) ===
+  - '+.sc-cdn.net'          # Snapchat 核心内容分发网络
+  - '+.scb-services.com'    # 后端基础设施与媒体服务
+  
+  # === Bitmoji 虚拟形象 (深度集成) ===
+  - '+.bitmoji.com'         # 核心域名
+  - '+.bitmojis.com'        # 静态资源与头像渲染
+  
+  # === 开发者套件、周边服务与遥测 ===
+  - '+.snapkit.co'          # 第三方 App 登录/分享集成
+  - '+.snap-dev.net'        # 内部遥测与 API
+  - '+.snapads.com'         # 广告分发 (如果不介意看广告可以走代理，否则可以用 AdGuard 拦截)
+  
+  # === 历史遗留的云服务域名 (App 偶尔仍会调用) ===
+  - 'feelinsonice-hrd.appspot.com'
