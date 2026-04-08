@@ -1,0 +1,54 @@
+payload:
+  # === 核心验证与账户通行证 (国区账号必须直连) ===
+  - 'appleid.apple.com'
+  - 'idmsa.apple.com'
+  - 'gsa.apple.com'
+  - 'setup.icloud.com'
+
+  # === App Store 与 iTunes 商店 API (国区必须直连) ===
+  - 'apps.apple.com'
+  - 'itunes.apple.com'
+  - 'buy.itunes.apple.com'
+  - 'bag.itunes.apple.com'
+  - 'api-edge.apps.apple.com'
+
+  # === iCloud 国区全量数据流 (云上贵州与跨设备同步) ===
+  - '+.icloud.com'
+  - '+.icloud.com.cn'
+  - '+.icloud.net.cn'
+  - '+.icloud-content.com'
+  - '+.icloud-content.com.cn'
+  - '+.apple-cloudkit.com'
+  - '+.gcbd.cloud'
+
+  # === 核心底层 CDN 与大文件传输 ===
+  - '+.mzstatic.com'           # App Store 安装包与图片
+  - '+.aaplimg.com'            # 系统更新
+  - '+.cdn-apple.com'          # 通用 CDN
+  - '+.apple-dns.net'          # 基础设施调配
+
+  # === Apple Music & Podcasts (国区节点直连极速) ===
+  - '+.music.apple.com'
+  - 'amp-api.music.apple.com'
+  - 'amp-api.podcasts.apple.com'
+  - 'radio.itunes.apple.com'
+  - 'bookkeeper.itunes.apple.com'
+  - '+.audio-ssl.itunes.apple.com'
+  - '+.mvod.itunes.apple.com'
+  - '+.books.apple.com'
+
+  # === APNs 实时推送与本地硬件服务 ===
+  - '+.push.apple.com'         # 消息推送通道
+  - '+.findmymobile.me'
+  - '+.apple-mapkit.com'       # 苹果地图 (高德数据)
+  - '+.ls.apple.com'           # 位置服务
+  - '+.apple-pay.com'          # Apple Pay 银联支付
+  - '+.smp-device-content.apple.com' # 设备配对动画资源
+
+  # === 中国区专属基建与兜底服务 ===
+  - '+.apple.cn'
+  - '+.apple.com.cn'
+  - '+.me.com'
+  - '+.mac.com'
+  - '+.apple-support.com'
+  - '+.apple.com'              # 最终兜底：未匹配的所有常规服务

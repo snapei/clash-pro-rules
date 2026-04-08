@@ -45,9 +45,9 @@
 - **Apple 域名列表 apple.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/apple.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/apple.txt)
-- **iCloud 域名列表 icloud.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/icloud.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/icloud.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/icloud.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/icloud.txt)
+- **applecn 域名列表 applecn.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/applecn.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/applecn.txt)
 - **Google 域名列表 google.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt)
