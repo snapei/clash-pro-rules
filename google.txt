@@ -53,6 +53,7 @@ payload:
   - '+.gvt3.com'
   - '+.gcr.io'              # 容器镜像 (开发必备)
   - '+.googlesource.com'    # 源代码仓库
+  - '+.ggpht.com'           # 存储用户头像、商店图片 (已在 YouTube 列表则可忽略)
   
   # === 补齐 AI 服务 (Gemini & DeepMind) ===
   - '+.gemini.google.com'
@@ -61,12 +62,7 @@ payload:
   - '+.generativelanguage.googleapis.com'
   - '+.ai.google'
   - '+.makersuite.google.com'
-  
-  # === 补齐 Android 与系统生态 ===
-  - '+.android.com'
-  - '+.android.clients.google.com'
-  - '+.play.google.com'     # Play 商店主入口
-  - '+.ggpht.com'           # 存储用户头像、商店图片 (已在 YouTube 列表则可忽略)
+  - '+.proactive.google.com'
   
   # === 补齐其他官方资产 ===
   - '+.g.co'                # 核心短链
