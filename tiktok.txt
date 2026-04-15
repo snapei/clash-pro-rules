@@ -1,26 +1,58 @@
 payload:
-  - '+.p16-tiktokcdn-com'
-  - '+.akamaized.net'
-  - '+.byteoversea.com'
-  - '+.ibytedtos.com'
-  - '+.ibyteimg.com'
-  - '+.ipstatp.com'
-  - '+.muscdn.com'
-  - '+.musical.ly'
-  - '+.sgpstatp.com'
-  - '+.snssdk.com'
-  - '+.tik-tokapi.com'
+  # ==========================================
+  # 🎯 TikTok 核心主站与 API (已补充隐藏调度节点)
+  # ==========================================
   - '+.tiktok.com'
-  - '+.tiktokcdn-eu.com'
-  - '+.tiktokcdn-us.com'
-  - '+.tiktokcdn.com'
-  - '+.tiktokd.net'
-  - '+.tiktokd.org'
-  - '+.tiktokeu-cdn.com'
-  - '+.tiktokrow-cdn.com'
+  - '+.tiktok.org'
   - '+.tiktokv.com'
   - '+.tiktokv.eu'
   - '+.tiktokv.us'
   - '+.tiktokw.eu'
   - '+.tiktokw.us'
+  - '+.tiktok-row.net'
+  - '+.tik-tokapi.com'
+  - '+.tiktokinfo.com'
+  - '+.tiktokd.net'
+  - '+.tiktokd.org'
   - '.vm.tiktok.com'
+
+  # ==========================================
+  # 🎞️ 核心 CDN 与视频流下发
+  # ==========================================
+  - '+.tiktokcdn.com'
+  - '+.tiktokcdn-eu.com'
+  - '+.tiktokcdn-us.com'
+  - '+.tiktokeu-cdn.com'
+  - '+.tiktokrow-cdn.com'
+  - '+.ibytedtok.com'
+  - '+.ibyteimg.com'
+  - '+.ipstatp.com'
+  - '+.sgpstatp.com'
+
+  # ==========================================
+  # 🌐 专属边缘计算与第三方 CDN (精准提取)
+  # ==========================================
+  - '+.tiktokcdn-com.akamaized.net'
+  - '+.tiktok.com.edgesuite.net'
+  - '+.bytedance.map.fastly.net'
+  - '+.p16-tiktokcdn-com'   # 保留你的原版，处理特殊的 CNAME 映射
+
+  # ==========================================
+  # 🏗️ 字节海外底层基建
+  # ==========================================
+  - '+.byteoversea.com'
+  - '+.byteoversea.net'
+  - '+.byteoversea.web.bytecel.com'
+
+  # ==========================================
+  # 🕰️ 历史遗留资产 (早期 Musical.ly 架构)
+  # ==========================================
+  - '+.musical.ly'
+  - '+.muscdn.com'
+  - '+.musemuse.cn'
+
+  # ==========================================
+  # 🛠️ 生态周边
+  # ==========================================
+  - '+.capcut.com'          # 剪映海外版，防 TikTok 授权登录失败
+  - '+.capcut.net'
