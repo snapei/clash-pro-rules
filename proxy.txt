@@ -21732,7 +21732,6 @@ payload:
   - '+.pontypridd.ac.uk'
   - '+.ponyanimalsex.com'
   - '+.poofetish.com'
-  - '+.pool.ntp.org'
   - '+.poolbinance.com'
   - '+.pooleacl.ac.uk'
   - '+.poolin.com'
