@@ -56,3 +56,13 @@ payload:
   # ==========================================
   - '+.capcut.com'          # 剪映海外版，防 TikTok 授权登录失败
   - '+.capcut.net'
+
+# ==========================================
+  # 🛒 TikTok Shop (全球小店) 电商与变现生态
+  # ==========================================
+  - '+.tiktokglobalshop.com'
+  - '+.tiktokglobalshopv.com'
+  - '+.seller.tiktok.com'
+  - '+.seller-tx.tiktok.com'    # 小店卖家后台高频通信节点
+  - '+.tokopedia.com'           # 东南亚 TikTok Shop 强绑定的底层电商基建
+  - '+.shop.tiktok.com'
