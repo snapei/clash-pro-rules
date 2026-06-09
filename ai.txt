@@ -12,10 +12,7 @@ payload:
   - '+.claude.ai'
   - '+.claudeusercontent.com'
 
-# Gemini & Copilot (AI Specific)
-  - '+.gemini.google.com'
-  - '+.generativelanguage.googleapis.com' # Gemini API 核心
-  - '+.proactive.google.com'
+# Copilot (AI Specific)
   - 'copilot.microsoft.com'
   - 'sydney.bing.com' # Copilot 核心后端
 
