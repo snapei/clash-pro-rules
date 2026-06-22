@@ -1,0 +1,61 @@
+# === 亚洲流媒体及 App 补充 (含 Jable/MissAV 变体) ===
+  - '+.jable.tv'
+  - '+.jable.com'
+  - '+.missav.com'
+  - '+.missav.ai'
+  - '+.missav.ws'           # MissAV 新增备用域名
+  - '+.surrit.com'           # MissAV/Jable 核心视频流
+  - '+.fc2.com'              # FC2 核心（含大量自拍/成人区）
+  - '+.fc2.com.vipsrc.com'    # FC2 视频流 CDN
+  - '+.thisav.com'
+  - '+.b9good.com'           # 部分成人动漫
+  - '+.javdb.com'            # 极其常用的查号与索引站
+  - '+.javdb001.com'         # JavDB 衍生移动端 API 域名
+  - '+.t66y.com'             # 草留社区
+  - '+.cl.6241x.com'         # 草留部分图片/图床域名
+
+  # === 欧美主流、App 接口与核心 CDN 补充 ===
+  - '+.pornhub.com'
+  - '+.phncdn.com'           # Pornhub 核心 CDN
+  - '+.phprcdn.com'          # Pornhub 移动端/App 静态资源
+  - '+.hqporn.com'
+  - '+.brazzers.com'         # 欧美厂牌核心
+  - '+.mofos.com'
+  - '+.bangbros.com'
+  - '+.realitykings.com'
+  - '+.twistys.com'
+  - '+.evilangel.com'
+  - '+.digitalplayground.com'
+
+  # === 国产、华人与移动端 App 专区 (含 P站视频、大黄网、各类原生App) ===
+  - '+.p99.app'              # 某国产P站 App 后台
+  - '+.p8.bet'               # 某华人成人App 接口
+  - '+.91porn.com'           # 91 核心
+  - '+.91p49.com'            # 91 变体与 API
+  - '+.91p07.com'            # 91 变体
+  - '+.91pcdn.com'           # 91 视频流 CDN
+  - '+.haijiao.com'          # 海角社区核心
+  - '+.hjcx.club'            # 海角 App API 接口
+  - '+.hjapi.com'            # 海角后台
+  - '+.hjcdn.com'            # 海角社区视频/图片 CDN
+  - '+.tangrenjie.tv'        # 唐人街成人网
+  - '+.sexinsex.net'         # 传统华人论坛
+  - '+.sis001.com'           # 第一会所论坛
+
+  # === 动漫 / 二次元 / 3D / 衍生 CDN 补充 ===
+  - '+.iwara.tv'             # Iwara (3D MMD 核心)
+  - '+.iwara.co'             # Iwara 移动端/新域名
+  - '+.hitomi.la'            # Hitomi 漫画
+  - '+.ltmcdn.com'           # Hitomi 图片加载源
+  - '+.pixiv.net'            # Pixiv (含大量 R18，如果全走代理可不加，按需引入)
+  - '+.pximg.net'            # Pixiv 图片 CDN
+  - '+.hentai-cosplay.com'   # Cosplay 专门站
+  - '+.pururin.to'           # 欧美知名二次元本子站
+
+  # === 汤不热/社交/流媒体变体 (含 18+ 内容集中地) ===
+  - '+.bunkr.is'             # 欧美极其常用的泄露/小视频托管盘（Bunkr）
+  - '+.bunkr.ru'             # Bunkr 镜像
+  - '+.bunkr.ax'             # Bunkr 核心 CDN 节点
+  - '+.cyberdrop.me'         # 欧美图集/短视频托管盘
+  - '+.coomer.su'            # OnlyFans / Fansly 免费第三方缓存站
+  - '+.kemono.su'            # Patreon / Fanbox 免费第三方缓存站
