@@ -1,25 +1,93 @@
-# === 亚洲流媒体及 App 补充 (含 Jable/MissAV 变体) ===
+payload:
+  # === Pornhub 系及核心 CDN ===
+  - '+.pornhub.com'
+  - '+.pornhubpremium.com'
+  - '+.phncdn.com'           # 极其重要：Pornhub 视频及图片加载源
+  - '+.phprcdn.com'          # Pornhub 移动端/App 静态资源
+  - '+.phubfilm.com'
+  - '+.youporn.com'
+  - '+.redtube.com'
+  - '+.tube8.com'
+  - '+.thumbzilla.com'
+
+  # === XVideos & XNXX ===
+  - '+.xvideos.com'
+  - '+.xvideos-cdn.com'      # XVideos 视频流
+  - '+.xnxx.com'
+  - '+.xnxx-cdn.com'         # XNXX 视频流
+
+  # === 亚洲主流流媒体 & App 接口 ===
   - '+.jable.tv'
   - '+.jable.com'
   - '+.missav.com'
   - '+.missav.ai'
-  - '+.missav.ws'           # MissAV 新增备用域名
-  - '+.surrit.com'           # MissAV/Jable 核心视频流
-  - '+.fc2.com'              # FC2 核心（含大量自拍/成人区）
-  - '+.fc2.com.vipsrc.com'    # FC2 视频流 CDN
+  - '+.missav.ws'           # MissAV 备用域名
+  - '+.surrit.com'           # 极其重要：MissAV 与 Jable 核心视频流域名
+  - '+.netflav.com'
+  - '+.avgle.com'
+  - '+.javmost.com'
+  - '+.bestjavporn.com'
   - '+.thisav.com'
-  - '+.b9good.com'           # 部分成人动漫
-  - '+.javdb.com'            # 极其常用的查号与索引站
-  - '+.javdb001.com'         # JavDB 衍生移动端 API 域名
-  - '+.t66y.com'             # 草留社区
-  - '+.cl.6241x.com'         # 草留部分图片/图床域名
+  - '+.fc2.com'              # FC2 核心（含大量自拍/独立成人区）
+  - '+.fc2.com.vipsrc.com'    # FC2 视频流 CDN
 
-  # === 欧美主流、App 接口与核心 CDN 补充 ===
-  - '+.pornhub.com'
-  - '+.phncdn.com'           # Pornhub 核心 CDN
-  - '+.phprcdn.com'          # Pornhub 移动端/App 静态资源
-  - '+.hqporn.com'
-  - '+.brazzers.com'         # 欧美厂牌核心
+  # === 华人、国产及移动端原生 App 专区 ===
+  - '+.91porn.com'           # 91 核心网页端
+  - '+.91p49.com'            # 91 变体与 App API 接口
+  - '+.91p07.com'            # 91 变体
+  - '+.91pcdn.com'           # 91 视频流 CDN
+  - '+.haijiao.com'          # 海角社区核心
+  - '+.hjcx.club'            # 海角 App API 
+  - '+.hjapi.com'            # 海角后台接口
+  - '+.hjcdn.com'            # 海角社区视频/图片 CDN
+  - '+.tangrenjie.tv'        # 唐人街
+  - '+.p99.app'              # 国产 P站 App 后台
+  - '+.p8.bet'               # 华人系列 App 接口
+  - '+.t66y.com'             # 草留社区
+  - '+.cl.6241x.com'         # 草留图片/图床
+  - '+.sexinsex.net'         # 传统华人论坛
+  - '+.sis001.com'           # 第一会所
+
+  # === 资讯、索引与号查资料库 ===
+  - '+.javbus.com'
+  - '+.javlibrary.com'
+  - '+.javdb.com'            # 极其常用的查号与索引站
+  - '+.javdb001.com'         # JavDB 移动端 API 域名
+  - '+.dmm.co.jp'            # FANZA/DMM 核心
+  - '+.mgstage.com'
+  - '+.avbase.com'
+
+  # === 二次元 / ACG / 漫画 / 3D ===
+  - '+.e-hentai.org'
+  - '+.exhentai.org'
+  - '+.hath.network'         # E-Hentai 图片加载 CDN
+  - '+.nhentai.net'
+  - '+.hanime.tv'
+  - '+.rule34.xxx'
+  - '+.wnacg.com'
+  - '+.jmcomic.me'
+  - '+.iwara.tv'             # Iwara (3D MMD 核心)
+  - '+.iwara.co'             # Iwara 移动端新域名
+  - '+.hitomi.la'            # Hitomi 漫画
+  - '+.ltmcdn.com'           # Hitomi 图片加载源
+  - '+.pixiv.net'            # Pixiv 插画（包含大量 R18 内容）
+  - '+.pximg.net'            # Pixiv 图片 CDN
+  - '+.hentai-cosplay.com'   # Cosplay 专门站
+  - '+.pururin.to'           # 欧美知名二次元本子站
+  - '+.b9good.com'           # 成人/里番动漫
+
+  # === 欧美主流、直播与订阅平台 ===
+  - '+.onlyfans.com'
+  - '+.fansly.com'
+  - '+.xhamster.com'
+  - '+.xhamsterlive.com'
+  - '+.xhcdn.com'            # xHamster CDN
+  - '+.spankbang.com'
+  - '+.sb-cd.com'            # SpankBang CDN
+  - '+.eporner.com'
+  - '+.chaturbate.com'
+  - '+.stripchat.com'
+  - '+.brazzers.com'         # 欧美知名厂牌
   - '+.mofos.com'
   - '+.bangbros.com'
   - '+.realitykings.com'
@@ -27,35 +95,11 @@
   - '+.evilangel.com'
   - '+.digitalplayground.com'
 
-  # === 国产、华人与移动端 App 专区 (含 P站视频、大黄网、各类原生App) ===
-  - '+.p99.app'              # 某国产P站 App 后台
-  - '+.p8.bet'               # 某华人成人App 接口
-  - '+.91porn.com'           # 91 核心
-  - '+.91p49.com'            # 91 变体与 API
-  - '+.91p07.com'            # 91 变体
-  - '+.91pcdn.com'           # 91 视频流 CDN
-  - '+.haijiao.com'          # 海角社区核心
-  - '+.hjcx.club'            # 海角 App API 接口
-  - '+.hjapi.com'            # 海角后台
-  - '+.hjcdn.com'            # 海角社区视频/图片 CDN
-  - '+.tangrenjie.tv'        # 唐人街成人网
-  - '+.sexinsex.net'         # 传统华人论坛
-  - '+.sis001.com'           # 第一会所论坛
-
-  # === 动漫 / 二次元 / 3D / 衍生 CDN 补充 ===
-  - '+.iwara.tv'             # Iwara (3D MMD 核心)
-  - '+.iwara.co'             # Iwara 移动端/新域名
-  - '+.hitomi.la'            # Hitomi 漫画
-  - '+.ltmcdn.com'           # Hitomi 图片加载源
-  - '+.pixiv.net'            # Pixiv (含大量 R18，如果全走代理可不加，按需引入)
-  - '+.pximg.net'            # Pixiv 图片 CDN
-  - '+.hentai-cosplay.com'   # Cosplay 专门站
-  - '+.pururin.to'           # 欧美知名二次元本子站
-
-  # === 汤不热/社交/流媒体变体 (含 18+ 内容集中地) ===
+  # === 欧美网盘与第三方缓存站 (常用于外泄流出内容) ===
   - '+.bunkr.is'             # 欧美极其常用的泄露/小视频托管盘（Bunkr）
   - '+.bunkr.ru'             # Bunkr 镜像
   - '+.bunkr.ax'             # Bunkr 核心 CDN 节点
   - '+.cyberdrop.me'         # 欧美图集/短视频托管盘
   - '+.coomer.su'            # OnlyFans / Fansly 免费第三方缓存站
-  - '+.kemono.su'            # Patreon / Fanbox 免费第三方缓存站
+  - '+.kemono.party'         # Patreon / Fanbox 免费第三方缓存站
+  - '+.kemono.su'            # Kemono 备用域名
