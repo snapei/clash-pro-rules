@@ -1,0 +1,36 @@
+payload:
+  # === DisneyPlus ===
+  - '+.disneyplus.com'
+  - '+.disney-plus.net'
+  - '+.dssott.com'           # 核心视频流分发
+  - '+.disneymediaservices.com'
+  - '+.bamgrid.com'          # 身份验证及后台服务
+
+  # === HBO Max / Max ===
+  - '+.hbomax.com'
+  - '+.max.com'              # 平台已全面升级改名为 Max
+  - '+.hbogo.com'
+  - '+.hbonow.com'
+  - '+.discomax.com'
+
+  # === Hulu ===
+  - '+.hulu.com'
+  - '+.huluim.com'
+  - '+.hulustream.com'
+
+  # === Spotify ===
+  - '+.spotify.com'
+  - '+.scssandbox.com'       # 客户端通信
+  - '+.spoti.fi'             # 短网址
+  - '+.audio-ak-spotify-com.akamaized.net' # 音频流分发
+
+  # === Twitch ===
+  - '+.twitch.tv'
+  - '+.twitchcdn.net'        # 直播视频流 CDN
+  - '+.ttvnw.net'
+  - '+.jtvnw.net'
+
+  # === Vimeo ===
+  - '+.vimeo.com'
+  - '+.vimeocdn.com'         # 视频流及静态资源
+  - '+.vimeogh.com'
