@@ -1,0 +1,63 @@
+payload:
+  # =========================================
+  # === Line (连我) 全量规则 ===
+  # =========================================
+  - '+.line.me'              # 核心网页与服务
+  - '+.line-apps.com'        # Line 内部应用及游戏分发
+  - '+.line-scdn.net'        # 极其重要：核心静态资源与图片 CDN
+  - '+.linecorp.com'         # 企业与官方域名
+  - '+.linemk.com'           # 营销与短链
+  - '+.naver.jp'             # 遗留底层架构（Line 原属 Naver 日本）
+  - '+.line.naver.jp'        # 遗留 API 接口
+  - '+.linetv.tw'            # Line TV (流媒体)
+  - '+.line.biz'             # Line 商业账号后台
+  - '+.line-games.com'       # Line 游戏业务
+  - '+.line-cdn.net'         # 备用分发网络
+
+  # =========================================
+  # === Snapchat (色拉布) 全量规则 ===
+  # =========================================
+  - '+.snapchat.com'         # 核心域名
+  - '+.snap.com'             # 母公司及短链/API
+  - '+.sc-cdn.net'           # 极其重要：核心图片、视频（Snap）内容分发 CDN
+  - '+.scb-services.com'     # 底层服务与遥测
+  - '+.snap-dev.net'         # 开发者与组件接口
+  - '+.snapkit.co'           # SnapKit 第三方集成接口
+  - '+.snapads.com'          # 广告组件（如果想屏蔽广告，可单独将此条放入 REJECT）
+  - '+.sc-jpl.com'           # Snapchat 发现页资源分发
+  - '+.story.snapchat.com'   # 网页版 Story 分发
+
+  # =========================================
+  # === Discord 全量规则 ===
+  # =========================================
+  - '+.discord.com'          # 核心官网与主 API
+  - '+.discordapp.com'       # 极其重要：客户端主业务域名（旧版核心，现仍大量使用）
+  - '+.discordapp.net'       # 极其重要：用户头像、上传的图片/视频附件等核心 CDN
+  - '+.discord.gg'           # 服务器邀请短链接
+  - '+.discord.media'        # 官方媒体资源
+  - '+.discord.co'
+  - '+.discord.net'          # 备用网络连通测试
+  - '+.discordstatus.com'    # 运行状态检测
+  - '+.discord-activities.com' # Discord 内置小游戏/活动组件
+
+  # =========================================
+  # === Reddit (红迪) 全量规则 ===
+  # =========================================
+  - '+.reddit.com'           # 主站域名
+  - '+.redditstatic.com'     # 极其重要：网页 CSS/JS 静态资源加载，不通会导致网页排版错乱
+  - '+.redditmedia.com'      # 极其重要：帖子内的图片、动图和视频流 CDN
+  - '+.redd.it'              # 短链接及图片直接托管地址（常见于第三方 App）
+  - '+.redditmail.com'       # 邮件通知内链
+  - '+.reddit.tv'            # Reddit 视频服务
+  - '+.redditspace.com'      # 社区语音房间（Talk/Space）组件
+  - '+.reddit-uploaded-media.s3-accelerate.amazonaws.com' # 用户媒体上传 AWS 加速节点
+
+  # =========================================
+  # === Signal (加密通讯) 全量规则 ===
+  # =========================================
+  - '+.signal.org'           # 主站与 API
+  - '+.signal.tube'          # Signal 视频链接分发与代理池
+  - '+.whispersystems.org'   # 极其重要：Signal 前身（Open Whisper Systems）的遗留核心接口
+  - '+.textsecure-service.whispersystems.org' # 加密文本消息推送底层接口
+  - '+.signal.art'           # 贴纸与资源包分发
+  - '+.signalcaptchas.org'   # 注册与反滥用人机验证接口
