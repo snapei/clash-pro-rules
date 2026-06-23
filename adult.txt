@@ -1,4 +1,4 @@
-payload:
+﻿payload:
   # === Pornhub 系及核心 CDN ===
   - '+.pornhub.com'
   - '+.pornhubpremium.com'
