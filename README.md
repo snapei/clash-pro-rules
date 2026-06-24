@@ -33,58 +33,158 @@
 
 > 以下地址填写在 Clash 配置文件里的 `rule-providers` 里的 `url` 配置项中。
 
-- **直连域名列表 direct.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/direct.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/direct.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/direct.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/direct.txt)
-- **代理域名列表 proxy.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/proxy.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/proxy.txt)
-- **广告域名列表 reject.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/reject.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/reject.txt)
-- **Apple 域名列表 apple.txt**：
+- **Apple域名列表 apple.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/apple.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/apple.txt)
-- **applecn 域名列表 applecn.txt**：
+- **Applecn域名列表 applecn.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/applecn.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/applecn.txt)
 - **Google 域名列表 google.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt)
-- **局域网 IP 及保留 IP 地址列表 lancidr.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/lancidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/lancidr.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/lancidr.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/lancidr.txt)
+- **YOUTUBE 域名列表 youtube.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/youtube.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/youtube.txt)
+- **NETFLIX 域名列表 netflix.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflix.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflix.txt)
+- **NETFLIX IP 地址列表 netflixcidr.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflixcidr.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflixcidr.txt)
 - **中国大陆 IPv4 地址列表 cncidr.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/cncidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/cncidr.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/cncidr.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/cncidr.txt)
-- **YOUTUBE 域名列表 youtube.txt**：  
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/youtube.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/youtube.txt)
-- **NETFLIX 域名列表 netflix.txt**：  
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflix.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflix.txt)
-- **NETFLIX IPv4 地址列表 netflixcidr.txt**：  
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflixcidr.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflixcidr.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflixcidr.txt)
-- **GFWList 域名列表 gfw.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/gfw.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/gfw.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/gfw.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/gfw.txt)
-- **GreatFire 域名列表 greatfire.txt**：  
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/greatfire.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/greatfire.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/greatfire.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/greatfire.txt)
 - **非中国大陆使用的顶级域名列表 tld-not-cn.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/tld-not-cn.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/tld-not-cn.txt)
+- **TELEGRAM 域名列表 telegram.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegram.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegram.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/telegram.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/telegram.txt)
 - **Telegram 使用的 IP 地址列表 telegramcidr.txt**：  
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegramcidr.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/telegramcidr.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/telegramcidr.txt)
 - **TIKTOK 域名列表 tiktok.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tiktok.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tiktok.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/tiktok.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/tiktok.txt)  
- 
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/tiktok.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/tiktok.txt)
+- **AI 域名列表 ai.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/ai.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/ai.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/ai.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/ai.txt)
+- **ANDROID 域名列表 android.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/android.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/android.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/android.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/android.txt)
+- **META 域名列表 meta.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/meta.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/meta.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/meta.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/meta.txt)
+- **META 使用的 IP 地址列表 metacidr.txt**：  
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/metacidr.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/metacidr.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/metacidr.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/metacidr.txt)
+- **AMAZON 域名列表 amazon.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/amazon.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/amazon.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/amazon.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/amazon.txt)
+- **MICROSOFT 域名列表 microsoft.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/microsoft.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/microsoft.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/microsoft.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/microsoft.txt)
+- **GITHUB 域名列表 github.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/github.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/github.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/github.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/github.txt)
+- **X 域名列表 x.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/x.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/x.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/x.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/x.txt)
+- **SOCIALS 域名列表 socials.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/socials.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/socials.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/socials.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/socials.txt)
+- **WORKSPACE 域名列表 workspace.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/workspace.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/workspace.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/workspace.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/workspace.txt)
+- **MULTIMEDIA 域名列表 multimedia.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/multimedia.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/multimedia.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/multimedia.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/multimedia.txt)
+- **PROXY 域名列表 proxy.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/proxy.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/proxy.txt)
+
 ### 使用方式
 
 关于 Clash mihomo 使用方式，请查看[mihomo](https://wiki.metacubex.one/config/) 或 [Lancellc's GitBook](https://lancellc.gitbook.io/clash/)。
+
+#### Proxy-Groups 配置方式,自定义开关
+
+```yaml
+proxy-groups:
+
+# GOOGLE
+- name: "GOOGLE"
+  type: select
+  proxies:
+    - "CN-HK"
+    - "JP-OSAKA"
+    - "US-OG"
+    - "US-LA"
+    - "US-ST"
+    - "SG-T"
+
+# YOUTUBE
+- name: "YOUTUBE"
+  type: select
+  proxies:
+    - "CN-HK"
+    - "JP-OSAKA"
+    - "US-OG"
+    - "US-LA"
+    - "US-ST"
+    - "SG-T"
+
+- name: "AI"
+  type: select
+  proxies:
+    - "CN-HK"
+    - "JP-OSAKA"
+    - "US-OG"
+    - "US-LA"
+    - "US-ST"
+    - "SG-T"
+
+- name: "SOCIALS"
+  type: select
+  proxies:
+    - "CN-HK"
+    - "JP-OSAKA"
+    - "US-OG"
+    - "US-LA"
+    - "US-ST"
+    - "SG-T"
+
+- name: "WORKSPACE"
+  type: select
+  proxies:
+    - "CN-HK"
+    - "JP-OSAKA"
+    - "US-OG"
+    - "US-LA"
+    - "US-ST"
+    - "SG-T"
+
+- name: "MULTIMEDIA"
+  type: select
+  proxies:
+    - "CN-HK"
+    - "JP-OSAKA"
+    - "US-OG"
+    - "US-LA"
+    - "US-ST"
+    - "SG-T"
+
+- name: "PROXY"
+  type: select
+  proxies:
+    - "CN-HK"
+    - "JP-OSAKA"
+    - "US-OG"
+    - "US-LA"
+    - "US-ST"
+    - "SG-T"
+```
+
 
 要想使用本项目的规则集，只需要在 Clash 配置文件中添加如下 `rule-providers` 和 `rules`。
 
@@ -92,26 +192,19 @@
 
 ```yaml
 rule-providers:
-  reject:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt"
-    path: ./ruleset/reject.yaml
-    interval: 86400
-
-  icloud:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/icloud.txt"
-    path: ./ruleset/icloud.yaml
-    interval: 86400
-
   apple:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt"
-    path: ./ruleset/apple.yaml
-    interval: 86400
+     type: http
+     behavior: domain
+     url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/apple.txt"
+     path: ./ruleset/apple.yaml
+     interval: 86400
+
+  applecn:
+     type: http
+     behavior: domain
+     url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt"
+     path: ./ruleset/applecn.yaml
+     interval: 86400
 
   google:
     type: http
@@ -120,48 +213,20 @@ rule-providers:
     path: ./ruleset/google.yaml
     interval: 86400
 
-  proxy:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt"
-    path: ./ruleset/proxy.yaml
-    interval: 86400
-
-  direct:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/direct.txt"
-    path: ./ruleset/direct.yaml
-    interval: 86400
-
-  cncidr:
-    type: http
-    behavior: ipcidr
-    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/cncidr.txt"
-    path: ./ruleset/cncidr.yaml
-    interval: 86400
-
-  lancidr:
-    type: http
-    behavior: ipcidr
-    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/lancidr.txt"
-    path: ./ruleset/lancidr.yaml
-    interval: 86400
-
   youtube:
     type: http
     behavior: domain
     url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/youtube.txt"
     path: ./ruleset/youtube.yaml
     interval: 86400
-    
+
   netflix:
     type: http
     behavior: domain
     url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt"
     path: ./ruleset/netflix.yaml
     interval: 86400
-    
+
   netflixcidr:
     type: http
     behavior: ipcidr
@@ -169,25 +234,18 @@ rule-providers:
     path: ./ruleset/netflixcidr.yaml
     interval: 86400
 
-  gfw:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/gfw.txt"
-    path: ./ruleset/gfw.yaml
-    interval: 86400
-
-  greatfire:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/greatfire.txt"
-    path: ./ruleset/greatfire.yaml
-    interval: 86400
-
   tld-not-cn:
     type: http
     behavior: domain
     url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/tld-not-cn.txt"
     path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegram:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/telegram.txt"
+    path: ./ruleset/telegram.yaml
     interval: 86400
 
   telegramcidr:
@@ -204,6 +262,89 @@ rule-providers:
     path: ./ruleset/tiktok.yaml
     interval: 86400
 
+  ai:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/ai.txt"
+    path: ./ruleset/ai.yaml
+    interval: 86400
+
+  android:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/android.txt"
+    path: ./ruleset/android.yaml
+    interval: 86400    
+
+  meta:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/meta.txt"
+    path: ./ruleset/meta.yaml
+    interval: 86400
+
+  metacidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/metacidr.txt"
+    path: ./ruleset/metacidr.yaml
+    interval: 86400
+
+  amazon:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/amazon.txt"
+    path: ./ruleset/amazon.yaml
+    interval: 86400
+
+  microsoft:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/microsoft.txt"
+    path: ./ruleset/microsoft.yaml
+    interval: 86400
+
+  github:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/github.txt"
+    path: ./ruleset/github.yaml
+    interval: 86400
+
+  x:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/x.txt"
+    path: ./ruleset/x.yaml
+    interval: 86400
+
+  socials:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/socials.txt"
+    path: ./ruleset/socials.yaml
+    interval: 86400
+
+  workspace:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/workspace.txt"
+    path: ./ruleset/workspace.yaml
+    interval: 86400
+
+  multimedia:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/multimedia.txt"
+    path: ./ruleset/multimedia.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
 
 
 ```
