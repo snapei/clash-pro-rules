@@ -39,15 +39,6 @@
 - **applecn域名列表 applecn.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/applecn.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/applecn.txt)
-- **Google域名列表 google.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt)
-- **Netflix 域名列表 netflix.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/netflix.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflix.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/netflix.txt)
-- **applecn 域名列表 applecn.txt**：
-  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/applecn.txt)
-  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/applecn.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/applecn.txt)
 - **Google 域名列表 google.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/google.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/google.txt)
@@ -105,6 +96,9 @@
 - **WORKSPACE 域名列表 workspace.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/workspace.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/workspace.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/workspace.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/workspace.txt)
+- **MULTIMEDIA 域名列表 multimedia.txt**：
+  - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/multimedia.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/multimedia.txt)
+  - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/multimedia.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/multimedia.txt)
 - **PROXY 域名列表 proxy.txt**：
   - [https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt](https://raw.githubusercontent.com/snapei/clash-pro-rules/release/proxy.txt)
   - [https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/proxy.txt](https://cdn.jsdelivr.net/gh/snapei/clash-pro-rules@release/proxy.txt)
@@ -161,6 +155,16 @@ proxy-groups:
     - "SG-T"
 
 - name: "WORKSPACE"
+  type: select
+  proxies:
+    - "CN-HK"
+    - "JP-OSAKA"
+    - "US-OG"
+    - "US-LA"
+    - "US-ST"
+    - "SG-T"
+
+- name: "MULTIMEDIA"
   type: select
   proxies:
     - "CN-HK"
@@ -326,6 +330,13 @@ rule-providers:
     behavior: domain
     url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/workspace.txt"
     path: ./ruleset/workspace.yaml
+    interval: 86400
+
+  multimedia:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/multimedia.txt"
+    path: ./ruleset/multimedia.yaml
     interval: 86400
 
   proxy:
