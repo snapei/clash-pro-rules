@@ -384,15 +384,16 @@ rules:
   - RULE-SET,youtube,YOUTUBE
   - RULE-SET,netflix,NETFLIX
   - RULE-SET,netflixcidr,NETFLIX,no-resolve
-  - RULE-SET,gfw,PROXY
-  - RULE-SET,greatfire,PROXY
   - RULE-SET,tld-not-cn,PROXY
   - RULE-SET,telegramcidr,PROXY,no-resolve
   - RULE-SET,tiktok,PROXY
   - RULE-SET,proxy,PROXY
   - RULE-SET,direct,DIRECT
+  - DST-PORT,5222,PROXY
+  - DST-PORT,5228,PROXY
+  - GEOSITE,CN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+  - MATCH,DIRECT
 ```
 
 ## 致谢
