@@ -1,0 +1,61 @@
+payload:
+  # =========================================
+  # === Dropbox (多宝箱) 全量规则 ===
+  # =========================================
+  - '+.dropbox.com'
+  - '+.dropboxapi.com'           # 极其重要：核心同步与第三方授权 API
+  - '+.dropboxusercontent.com'   # 极其重要：用户上传文件、图片的直连读取 CDN
+  - '+.dropboxstatic.com'        # 网页版前端静态资源
+  - '+.dropbox.tech'             # 开发者与技术支持博客
+  - '+.dropboxforum.com'         # 官方社区
+  - '+.dropboxbusiness.com'      # 企业版专属服务
+  - '+.dropboxcaptcha.com'       # 登录验证组件
+  - '+.getdropbox.com'           # 早期遗留域名及重定向
+  - '+.dropbox.zendesk.com'      # 客服工单系统
+
+  # =========================================
+  # === OneDrive (微软云盘) 全量规则 ===
+  # =========================================
+  - '+.onedrive.com'
+  - '+.onedrive.live.com'
+  - '+.1drv.com'                 # 短链接与分享链
+  - '+.1drv.ms'                  # 核心短链接服务
+  - '+.livefilestore.com'        # 极其重要：OneDrive 核心文件存储/下载服务器
+  - '+.storage.live.com'         # 微软 Live 云存储组件
+  - '+.storage.msn.com'
+  - '+.spoprod-a.akamaihd.net'   # SharePoint / OneDrive 共享的底层 Akamai CDN 节点（如果不通会导致网页版无限转圈）
+  - '+.skydrive.wns.windows.com' # Windows 系统底层原生同步推送接口 (SkyDrive 为早期名称)
+  - '+.photos.live.com'          # OneDrive 相册同步接口
+
+  # =========================================
+  # === PikPak (私密云盘) 全量规则 ===
+  # =========================================
+  - '+.mypikpak.com'             # 核心网页版与服务接口
+  - '+.mypikpak.net'             # 核心 API 与底层服务
+  - '+.pikpak.net'
+  - '+.pikpak.me'
+  - '+.access-pikpak.com'        # 身份验证及辅助接口
+
+  # =========================================
+  # === Notion (笔记与协作) 全量规则 ===
+  # =========================================
+  - '+.notion.so'                # 核心业务主域名
+  - '+.notion.com'
+  - '+.notion.site'              # 用户对外公开分享的页面域名
+  - '+.notion.new'               # 快捷新建页面快捷跳转
+  - '+.notionusercontent.com'    # 极其重要：笔记中插入的图片、PDF、附件的专属托管存储桶
+  - '+.notion-static.com'        # 极其重要：网页端 CSS/JS 及内置 Icon 库 CDN
+  - '+.notion.vip'               # Notion 官方认证专家与周边资源
+
+  # =========================================
+  # === Slack (团队协作) 全量规则 ===
+  # =========================================
+  - '+.slack.com'                # 核心业务
+  - '+.slack.net'                # API 及边缘节点
+  - '+.slack-core.com'           # 底层微服务群
+  - '+.slack-edge.com'           # 极其重要：Slack 的 WebSocket 实时连接通道，断开会导致一直“正在连接...”
+  - '+.slack-msgs.com'           # 消息推送通道
+  - '+.slack-files.com'          # 极其重要：聊天中上传的文件及附件下载点
+  - '+.slack-imgs.com'           # 极其重要：聊天界面的图片与表情包渲染 CDN
+  - '+.slackb.com'               # Slackbot 机器人后端接口
+  - '+.slack-redir.net'          # 对话框内外部链接安全跳转拦截

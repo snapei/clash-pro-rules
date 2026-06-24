@@ -1,0 +1,85 @@
+payload:
+  # =========================================
+  # === Disney+ (迪士尼+) 全量规则 ===
+  # =========================================
+  - '+.disneyplus.com'
+  - '+.disney-plus.net'
+  - '+.dssott.com'           # 核心视频流与媒体分发
+  - '+.disneymediaservices.com'
+  - '+.bamgrid.com'          # 身份验证及核心后台服务 (极其重要)
+  - '+.bam.nr-data.net'      # 遥测与性能数据
+  - '+.disney.api.edge.bamgrid.com' # API 边缘节点
+  - '+.disney.connections.edge.bamgrid.com'
+  - '+.disney.content.edge.bamgrid.com'
+  - '+.disney.playback.edge.bamgrid.com'
+  - '+.starott.com'          # Disney+ Star 品牌区内容流
+  - '+.star.api.edge.bamgrid.com'
+  - '+.hotstar.com'          # Disney+ Hotstar (东南亚/印度区)
+  - '+.hotstarext.com'
+  - '+.execute-api.us-east-1.amazonaws.com' # 部分登录组件依赖的 AWS API
+
+  # =========================================
+  # === HBO Max / Max 全量规则 ===
+  # =========================================
+  - '+.max.com'              # 平台全面升级后的新核心域名
+  - '+.hbomax.com'           # 旧版/兼容重定向域名
+  - '+.hbomaxcdn.com'        # 核心内容分发 CDN
+  - '+.hbo.com'
+  - '+.hbogo.com'
+  - '+.hbonow.com'
+  - '+.hboasia.com'          # 亚洲区 HBO GO
+  - '+.hboasia.tv'
+  - '+.discomax.com'         # 华纳探索频道合并后的媒体资产
+  - '+.cinemax.com'          # 旗下 Cinemax
+  - '+.maxgo.com'
+  - '+.cws.conviva.com'      # 视频流质量监测 (拦截可能导致播放报错)
+
+  # =========================================
+  # === Hulu (葫芦) 全量规则 ===
+  # =========================================
+  - '+.hulu.com'
+  - '+.huluim.com'           # 图片与静态资源
+  - '+.hulustream.com'       # 视频流 CDN
+  - '+.huluad.com'           # 广告组件 (不走代理可能导致卡在广告界面)
+  - '+.huluqa.com'
+  - '+.112.2o7.net'          # Hulu 遗留分析追踪域名
+
+  # =========================================
+  # === Spotify (声田) 全量规则 ===
+  # =========================================
+  - '+.spotify.com'
+  - '+.spotifycdn.com'       # 核心资源与音频 CDN
+  - '+.spotifycdn.net'
+  - '+.scdn.co'              # 极其重要：核心音频与前端 CDN
+  - '+.spoti.fi'             # 短网址与分享链接
+  - '+.scssandbox.com'       # 客户端底层通信
+  - '+.audio-ak-spotify-com.akamaized.net' # Akamai 音频流加速节点
+  - '+.byspotify.com'
+  - '+.spotifycharts.com'
+  - '+.spotifycodes.com'
+  - '+.spotifyjobs.com'
+  - '+.spotilocal.com'       # 本地设备发现与投屏握手
+  - '+.tospotify.com'
+  - '+.spotify.design'
+
+  # =========================================
+  # === Twitch (老鼠台) 全量规则 ===
+  # =========================================
+  - '+.twitch.tv'
+  - '+.twitch.com'
+  - '+.twitchcdn.net'        # 直播视频流 CDN
+  - '+.ttvnw.net'            # 极其重要：主要直播流分发网络
+  - '+.jtvnw.net'            # 遗留/图片/切片流分发网络 (Justin.tv 时代遗留)
+  - '+.twitch.ext'           # Twitch 插件/扩展面板组件
+  - '+.twitchsvc.net'        # 后台微服务
+
+  # =========================================
+  # === Vimeo 全量规则 ===
+  # =========================================
+  - '+.vimeo.com'
+  - '+.vimeocdn.com'         # 核心视频流及静态资源 CDN
+  - '+.vimeogh.com'
+  - '+.vimeows.com'          # WebSockets 及实时服务
+  - '+.vimeo.fr'
+  - '+.livestream.com'       # Vimeo 旗下的直播服务业务
+  - '+.vhx.tv'               # Vimeo OTT 流媒体变现平台
