@@ -1,6 +1,13 @@
 payload:
+  # ==========================================
+  # === 账户注册与人机验证 (Outlook 注册必加) ===
+  # ==========================================
+  - '+.arkoselabs.com'       # 微软极度依赖的 Arkose 人机风控验证服务
+  - '+.funcaptcha.com'       # Arkose 验证码备用域名
+  - '+.octocaptcha.com'      # 微软图形验证码核心组件
+
   # === 核心系统与账户 (解决 SNI 阻断与登录超时) ===
-  - '+.live.com'             # 核心验证 (login.live.com 等)
+  - '+.live.com'             # 核心验证 (包含 signup.live.com 注册入口)
   - '+.microsoftonline.com'  # 企业/教育账户海外验证
   - '+.msn.com'              # MSN 国际版 (国内直连通常会被劫持回国内特供版)
   - '+.msauth.net'           # 关键：账户登录验证
