@@ -2,9 +2,13 @@ payload:
   # ==========================================
   # === 账户注册与人机验证 (Outlook 注册必加) ===
   # ==========================================
+  - '+.hsprotect.net'        # HUMAN Security 后台静默收集器
+  - '+.px-cloud.net'         # PerimeterX 核心反欺诈云防御网络
+  - '+.perimeterx.net'       # PerimeterX 边缘收集节点
   - '+.arkoselabs.com'       # 微软极度依赖的 Arkose 人机风控验证服务
   - '+.funcaptcha.com'       # Arkose 验证码备用域名
   - '+.octocaptcha.com'      # 微软图形验证码核心组件
+  - '+.crcldu.com'           # 第三方数据管道与遥测脚本
 
   # ==========================================
   # === 核心系统、账户与静态资源 (防白屏、防断连) ===
