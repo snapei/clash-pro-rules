@@ -1,6 +1,6 @@
 payload:
   # ==========================================
-  # 🎯 TikTok 核心主站与 API (已补充隐藏调度节点)
+  # === 1. TikTok 国际版核心主站与 API ===
   # ==========================================
   - '+.tiktok.com'
   - '+.tiktok.org'
@@ -17,7 +17,25 @@ payload:
   - '.vm.tiktok.com'
 
   # ==========================================
-  # 🎞️ 核心 CDN 与视频流下发
+  # === 2. CapCut (剪映国际版) 生态 ===
+  # ==========================================
+  - '+.capcut.com'           # 官网与 TikTok 授权登录接口
+  - '+.capcut.net'
+  - '+.capcutapi.com'        # 核心 API：负责加载特效、云草稿与在线模板
+  - '+.capcutv.com'          # 媒体视频流媒体通道
+
+  # ==========================================
+  # === 3. TikTok Shop (全球小店/商城) ===
+  # ==========================================
+  - '+.tiktokglobalshop.com' # 小店全球核心主域
+  - '+.tiktokglobalshopv.com'
+  - '+.shop.tiktok.com'      # 前台商城入口
+  - '+.seller.tiktok.com'    # 卖家中心后台
+  - '+.seller-tx.tiktok.com' # 卖家中心高频 API 交互节点
+  - '+.tokopedia.com'        # 东南亚 TikTok Shop 强绑定的底层电商基建
+
+  # ==========================================
+  # === 4. 核心 CDN 与底层视频流下发 ===
   # ==========================================
   - '+.tiktokcdn.com'
   - '+.tiktokcdn-eu.com'
@@ -30,39 +48,19 @@ payload:
   - '+.sgpstatp.com'
 
   # ==========================================
-  # 🌐 专属边缘计算与第三方 CDN (精准提取)
-  # ==========================================
-  - '+.tiktokcdn-com.akamaized.net'
-  - '+.tiktok.com.edgesuite.net'
-  - '+.bytedance.map.fastly.net'
-  - '+.p16-tiktokcdn-com'   # 保留你的原版，处理特殊的 CNAME 映射
-
-  # ==========================================
-  # 🏗️ 字节海外底层基建
+  # === 5. 字节海外底层基建与专属边缘节点 ===
   # ==========================================
   - '+.byteoversea.com'
   - '+.byteoversea.net'
   - '+.byteoversea.web.bytecel.com'
+  - '+.tiktokcdn-com.akamaized.net'
+  - '+.tiktok.com.edgesuite.net'
+  - '+.bytedance.map.fastly.net'
+  - '+.p16-tiktokcdn-com'    # CNAME 映射专用
 
   # ==========================================
-  # 🕰️ 历史遗留资产 (早期 Musical.ly 架构)
+  # === 6. 历史遗留资产 (早期 Musical.ly) ===
   # ==========================================
   - '+.musical.ly'
   - '+.muscdn.com'
   - '+.musemuse.cn'
-
-  # ==========================================
-  # 🛠️ 生态周边
-  # ==========================================
-  - '+.capcut.com'          # 剪映海外版，防 TikTok 授权登录失败
-  - '+.capcut.net'
-
-  # ==========================================
-  # 🛒 TikTok Shop (全球小店) 电商与变现生态
-  # ==========================================
-  - '+.tiktokglobalshop.com'
-  - '+.tiktokglobalshopv.com'
-  - '+.seller.tiktok.com'
-  - '+.seller-tx.tiktok.com'    # 小店卖家后台高频通信节点
-  - '+.tokopedia.com'           # 东南亚 TikTok Shop 强绑定的底层电商基建
-  - '+.shop.tiktok.com'
