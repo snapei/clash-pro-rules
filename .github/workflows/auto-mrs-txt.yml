@@ -33,11 +33,15 @@ jobs:
           for txt_file in *.txt; do
             if [ -f "$txt_file" ]; then
               filename=$(basename -- "$txt_file" .txt)
-              echo "正在转换: $txt_file -> ${filename}.mrs"
               
-              # 注意这里参数的区别：使用 text 而不是 yaml
-              # 默认使用 classical，如果你的 txt 是纯域名，请改为 domain
-              ./mihomo convert-ruleset domain text "$txt_file" "${filename}.mrs"
+              # 判断文件名是否包含 cidr（不区分大小写）
+              if echo "$filename" | grep -qi "cidr"; then
+                echo "正在转换 CIDR 规则: $txt_file -> ${filename}.mrs (类型: ipcidr)"
+                ./mihomo convert-ruleset ipcidr text "$txt_file" "${filename}.mrs"
+              else
+                echo "正在转换 域名 规则: $txt_file -> ${filename}.mrs (类型: domain)"
+                ./mihomo convert-ruleset domain text "$txt_file" "${filename}.mrs"
+              fi
             fi
           done
           rm mihomo
