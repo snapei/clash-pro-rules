@@ -21,7 +21,7 @@ jobs:
         with:
           ref: release
 
-      - name: Download Mihomo & Convert
+- name: Download Mihomo & Convert
         run: |
           # 1. 下载最新内核
           VERSION=$(curl -sL https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | jq -r .tag_name)
@@ -29,18 +29,19 @@ jobs:
           gunzip mihomo.gz
           chmod +x mihomo
 
-          # 2. 遍历 txt 文件并转换
+          # 2. 遍历 txt 文件并智能转换
           for txt_file in *.txt; do
             if [ -f "$txt_file" ]; then
               filename=$(basename -- "$txt_file" .txt)
               
-              # 判断文件名是否包含 cidr（不区分大小写）
+              # 根据文件名判断使用 ipcidr 还是 domain
               if echo "$filename" | grep -qi "cidr"; then
-                echo "正在转换 CIDR 规则: $txt_file -> ${filename}.mrs (类型: ipcidr)"
-                ./mihomo convert-ruleset ipcidr text "$txt_file" "${filename}.mrs"
+                echo "正在转换 CIDR 规则: $txt_file -> ${filename}.mrs"
+                # 标准顺序：convert-ruleset <behavior> <format> <input> <output>
+                ./mihomo convert-ruleset ipcidr text "$txt_file" "${filename}.mrs" || echo "转换失败: $txt_file"
               else
-                echo "正在转换 域名 规则: $txt_file -> ${filename}.mrs (类型: domain)"
-                ./mihomo convert-ruleset domain text "$txt_file" "${filename}.mrs"
+                echo "正在转换 域名 规则: $txt_file -> ${filename}.mrs"
+                ./mihomo convert-ruleset domain text "$txt_file" "${filename}.mrs" || echo "转换失败: $txt_file"
               fi
             fi
           done
