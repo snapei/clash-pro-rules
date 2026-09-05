@@ -1,0 +1,56 @@
+name: Auto Generate MRS Rules from TXT
+
+on:
+  push:
+    branches:
+      - release # 监听 release 分支的推送
+    paths:
+      - '*.txt' # 只有 txt 文件发生变动时才触发
+
+jobs:
+  convert-and-push:
+    runs-on: ubuntu-latest
+    # 防止 GitHub Actions 机器人循环触发
+    if: github.actor != 'github-actions[bot]' 
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: release
+
+      - name: Download Mihomo & Convert
+        run: |
+          # 1. 下载最新内核
+          VERSION=$(curl -sL https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | jq -r .tag_name)
+          curl -sL "https://github.com/MetaCubeX/mihomo/releases/download/${VERSION}/mihomo-linux-amd64-${VERSION}.gz" -o mihomo.gz
+          gunzip mihomo.gz
+          chmod +x mihomo
+
+          # 2. 遍历 txt 文件并转换
+          for txt_file in *.txt; do
+            if [ -f "$txt_file" ]; then
+              filename=$(basename -- "$txt_file" .txt)
+              echo "正在转换: $txt_file -> ${filename}.mrs"
+              
+              # 注意这里参数的区别：使用 text 而不是 yaml
+              # 默认使用 classical，如果你的 txt 是纯域名，请改为 domain
+              ./mihomo convert-ruleset domain text "$txt_file" "${filename}.mrs"
+            fi
+          done
+          rm mihomo
+
+      - name: Commit and Push MRS files
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 将所有生成的 mrs 文件添加到暂存区
+          git add *.mrs
+          
+          # 检查是否有文件变动
+          if git diff-index --quiet HEAD --; then
+            echo "没有需要提交的更改。"
+          else
+            git commit -m "Auto generate MRS rules from txt"
+            git push
+          fi
