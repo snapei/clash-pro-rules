@@ -6,6 +6,9 @@ on:
       - release # 监听 release 分支的推送
     paths:
       - '*.txt' # 只有 txt 文件发生变动时才触发
+  schedule:
+    - cron: '0 14 * * *' # 定时任务：每天 UTC 时间 14:00 (北京时间晚上 22:00) 自动执行
+  workflow_dispatch: # 添加手动触发按钮，方便在 Actions 页面点击运行
 
 jobs:
   convert-and-push:
