@@ -36,11 +36,13 @@ jobs:
               
               # 判断文件名是否包含 cidr（不区分大小写）
               if echo "$filename" | grep -qi "cidr"; then
-                echo "正在转换 CIDR 规则: $txt_file -> ${filename}.mrs (类型: ipcidr)"
-                ./mihomo convert-ruleset ipcidr text "$txt_file" "${filename}.mrs"
+                echo "正在转换 CIDR 规则: $txt_file -> ${filename}.mrs (类型: ipcidr, 格式: yaml)"
+                # ⚠️ 注意这里：将 text 改为了 yaml
+                ./mihomo convert-ruleset ipcidr yaml "$txt_file" "${filename}.mrs"
               else
-                echo "正在转换 域名 规则: $txt_file -> ${filename}.mrs (类型: domain)"
-                ./mihomo convert-ruleset domain text "$txt_file" "${filename}.mrs"
+                echo "正在转换 域名 规则: $txt_file -> ${filename}.mrs (类型: domain, 格式: yaml)"
+                # ⚠️ 注意这里：将 text 改为了 yaml
+                ./mihomo convert-ruleset domain yaml "$txt_file" "${filename}.mrs"
               fi
             fi
           done
