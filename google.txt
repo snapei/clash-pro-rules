@@ -47,7 +47,7 @@ payload:
   - '+.google.com.tw'
   - '+.google.ru'
 
-# === 补齐下载与分发 (解决 Chrome/Play 商店更新问题) ===
+  # === 补齐下载与分发 (解决 Chrome/Play 商店更新问题) ===
   - '+.gvt1.com'
   - '+.gvt2.com'
   - '+.gvt3.com'

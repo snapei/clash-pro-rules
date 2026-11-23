@@ -1,15 +1,24 @@
-# GitHub Global Comprehensive List
 payload:
   # === 核心主站 ===
   - '+.github.com'
-  - '+.github.io'        # GitHub Pages
-  - '+.github.dev'       # 网页版 VS Code 编辑器
-  
-  # === 静态资源与文件分发 (流量大头) ===
-  - '+.githubusercontent.com' # **极重要**：Raw 代码、头像、附件
-  - '+.githubassets.com'      # 网站 UI 资源
-  
-  # === 其它官方关联 ===
+  - '+.github.io'            # GitHub Pages
+  - '+.github.dev'           # 网页版 VS Code 编辑器
   - '+.githubapp.com'
-  - '+.git.io'                # 官方短链
-  - '+.ghcr.io'               # GitHub 容器镜像仓库
+  - '+.git.io'               # 官方短链
+  
+  # === 静态资源与文件分发 ===
+  - '+.githubusercontent.com' # Raw 代码、头像、附件、Release 发行包
+  - '+.githubassets.com'      # 网站前端 UI 样式与资源
+  - '+.github.global.ssl.fastly.net' # Fastly 专属加速层
+  - '+.github.map.fastly.net'
+  
+  # === API、验证与状态 ===
+  - '+.githubapi.com'
+  - '+.githubstatus.com'
+  
+  # === 镜像与包管理 ===
+  - '+.ghcr.io'               # GitHub Container Registry (容器镜像)
+  - '+.pkg.github.com'        # 软件包托管
+  
+  # === GitHub Copilot (AI 矩阵) ===
+  - '+.githubcopilot.com'

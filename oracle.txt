@@ -1,0 +1,23 @@
+payload:
+  # ==========================================
+  # === 1. Oracle Cloud (甲骨文云核心控制台与验证) ===
+  # ==========================================
+  - '+.oracle.com'                   # Oracle 主域名 (包含云服务入口与官网)
+  - '+.oraclecloud.com'              # Oracle Cloud 核心控制台面板
+  - '+.oraclecloud.network'          # OCI 内部网络与 API 路由层
+  - '+.oracleidentitycloudservice.com' # 极其重要：甲骨文云的 SSO 单点登录验证 (不加必白屏)
+  - '+.oracleemaildelivery.com'      # 邮件投递服务
+
+  # ==========================================
+  # === 2. Oracle 开发者资源与收购技术体系 ===
+  # ==========================================
+  - '+.java.com'                     # Java 官方网站
+  - '+.mysql.com'                    # MySQL 官方网站
+  - '+.netsuite.com'                 # Oracle 旗下的 ERP 云服务
+  - '+.eloqua.com'                   # Oracle 营销云
+  
+  # ==========================================
+  # === 3. Oracle 内容分发与静态资源 ===
+  # ==========================================
+  - '+.oracle.com.edgekey.net'       # Oracle 调用的 Akamai CDN 边缘节点
+  - '+.oracleimg.com'                # Oracle 网页静态图片与视觉资源

@@ -1,0 +1,35 @@
+payload:
+  # ==========================================
+  # === 1. 新版 Siri 与 Apple Intelligence 核心引擎 ===
+  # ==========================================
+  - '+.siri.apple.com'           # Siri 核心语音与意图识别
+  - '+.seed-siri.apple.com'      # Siri 预发布/AI 训练模型通道
+  - '+.smoot.apple.com'          # 极其重要：Spotlight 搜索与 Siri 建议 (AI 调用的前置条件)
+  - '+.smoot-search.apple.com'   # AI 深度搜索辅助
+  - '+.g.apple.com'              # 极其重要：苹果底层功能开关与区域检测 (Feature Toggles)
+
+  # ==========================================
+  # === 2. Private Cloud Compute (私密云计算) 与中继 ===
+  # ==========================================
+  # 当端侧算力不足时，Apple 会将数据加密发往云端，依赖以下中继网络
+  - '+.mask.icloud.com'          # 隐私中继与底层加密通信
+  - '+.mask-h2.icloud.com'
+  - '+.mask-api.icloud.com'
+  - '+.relay.apple.com'          # 苹果官方中继节点
+
+  # ==========================================
+  # === 3. 生态联动与上下文感知 ===
+  # ==========================================
+  # Apple Intelligence 需要跨应用读取信息 (如帮你总结邮件)，极度依赖云端套件
+  - '+.apple-cloudkit.com'       # CloudKit 核心数据库
+  - '+.icloud.com'               # 网页版与底层 iCloud API
+  - '+.apple-mapsearch.com'      # 本地生活与位置上下文感知 API
+
+  # ==========================================
+  # === 4. ChatGPT 深度集成 (外部大模型握手) ===
+  # ==========================================
+  # 当 Siri 遇到通用知识盲区时，会调用外部模型，目前深度绑定 OpenAI
+  - '+.openai.com'
+  - '+.chatgpt.com'
+  - '+.oaistatic.com'
+  - '+.oaiusercontent.com'
